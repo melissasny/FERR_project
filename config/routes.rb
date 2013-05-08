@@ -1,4 +1,4 @@
-FERRFinalProject::Application.routes.draw do
+FERRProject::Application.routes.draw do
 
 get "home" => "static_pages#test", :as => "home"
 
