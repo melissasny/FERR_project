@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FERRProject</title>
+  <title>Fit in the City | NYC</title>
+  
+  <meta name="keywords" content="fitness, exercise, health clubs, NYC">
+  <meta name="description" content="Fitness and Exercise in NYC">
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
 </head>
 <body>
 
+  <div id="container">
+
+    <header class="clearfix">
+
+      <h1>Fit in the City | NYC</h1>
+
+      <nav>
+        <%= link_to "Home", home_path%>
+        <% if current_user %>
+          <%= link_to "Logout", 'log_out' %>
+        <% else %>
+          <%= link_to "Sign-up", sign_up_path %>
+          <%= link_to "Login", log_in_path %> 
+        <% end %>
+      </nav>
+      
+      <p>
+        <% if current_user %>
+          logged in as <%= current_user.user_name %>
+        <% end %>
+      </p>  
+
+    </header>
+    
+	<% flash.each do |name, msg| %>
+		<%= content_tag :div, msg, :id => "flash_#{name}" %>
+	<% end %>
+
 <%= yield %>
+
+  </div><!--close container-->
 
 </body>
 </html>

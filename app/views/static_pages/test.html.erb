@@ -1,0 +1,41 @@
+<h1>Hi this is static_pages/test.html.erb</h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<% @activity.each do |act| %>
+
+<!-- for each activity print activity group and name -->
+
+	<p>Activity Group: <%= act.group %></p>
+	<p>Activity Name: <%= act.name %></p>
+	<br>
+
+<!-- for each activity, collect the neighborhoods that offer the activity -->
+
+	<% act.neighborhood_activities.collect { |a| a.neighborhood} %>
+
+<!-- for each activity, collect the facilities that offer the activity -->
+
+	<% act.facility_activities.collect { |a| a.facility} %>
+
+<!-- for each neighborhood that offers the activity, print the neighborhood name -->
+
+			<% act.neighborhoods.each do |neigh| %>
+				<p>Neighborhood: <%= neigh.name %></p>
+				<br>
+
+<!-- for each facility that offers the activity, if it's in the nieghborhood, print the facility name and phone -->
+				<% act.facilities.each do  |fac| %>
+					<% if neigh.name == fac.neighborhood.name %> 
+						<p>Facility Name: <%= fac.name %></p>
+						<p>Facility Phone: <%= fac.phone %></p>
+						<br>
+					<% end %>
+				<% end %>	
+			<% end %>
+		
+	<br>
+
+<% end %>
