@@ -4,7 +4,7 @@
 <br />
 <br />
 <br />
-<% @group.each do |g| %>
+<% @groups.each do |g| %>
 		
 	<% if !g.activities.empty? %> 
 		<p>Group name: <%= g.name %></p>
@@ -12,7 +12,6 @@
 		
 		<% g.activities.each do |act| %>
 			<p>Activity name: <%= act.name %></p>
-			<br>
 
 <!-- for each activity, collect the neighborhoods that offer the activity -->
 
@@ -26,15 +25,13 @@
 
 			<% act.neighborhoods.each do |neigh| %>
 				<p>Neighborhood: <%= neigh.name %></p>
-				<br>
 
 <!-- for each facility that offers the activity, if it's in the neighborhood, print the facility name and phone -->
 			<% act.facilities.each do  |fac| %>
 					<% if neigh.name == fac.neighborhood.name %> 
 						<p>Facility Name: <%= fac.name %></p>
 						<p>Phone: <%= fac.phone %></p>
-						<p>Website: <%= fac.website %></p>
-						<br>
+						<p>Website: <%= fac.website %></p><br>
 					<% end %>
 				<% end %>	
 			<% end %>
