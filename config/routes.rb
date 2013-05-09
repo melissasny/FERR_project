@@ -1,5 +1,7 @@
 FERRProject::Application.routes.draw do
 
+get "sessions/new"
+
 get "users/new"
 
 get "home" => "static_pages#test", :as => "home"
