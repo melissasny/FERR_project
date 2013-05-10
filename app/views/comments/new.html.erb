@@ -1,2 +1,14 @@
-<h1>Comments#new</h1>
-<p>Find me in app/views/comments/new.html.erb</p>
+<h3>Comments</h3>
+
+<div id = "new_comment">
+<%= form_for @comment do |f| %>
+	<p><%= @comment.errors.full_messages.first %><p>
+
+ 	<p><%= f.label "Select a facility" %></p>
+    <p><%= f.select :name, options_from_collection_for_select(Facility.order("name"), 'id', 'name') %></p>
+
+	<p><%= f.text_area_tag :contents, (:message, "Enter comment here", size => "25x10") %></p>
+	
+	<p><%= f.submit ("Post Comment") %></p>
+<% end %>
+</div>
