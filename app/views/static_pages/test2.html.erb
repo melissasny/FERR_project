@@ -1,40 +1,37 @@
-<h1>Hi this is static_pages/test2.html.erb</h1>
-<br />
-<br />
-<br />
+<h2>Hi this is static_pages/test2.html.erb</h2>
 <br />
 <br />
 <% @groups.each do |g| %>
-		
 	<% if !g.activities.empty? %> 
-		<p>Group name: <%= g.name %></p>
+		<button type="button"><%= g.name %></button>
 	<% end %> 
 		
+		<ul class="button-class">
 		<% g.activities.each do |act| %>
-			<p>Activity name: <%= act.name %></p>
+			<li class="sport"><%= act.name %>
 
 <!-- for each activity, collect the neighborhoods that offer the activity -->
-
-			<% act.neighborhood_activities.collect { |a| a.neighborhood} %>
+				<% act.neighborhood_activities.collect { |a| a.neighborhood} %>
 
 <!-- for each activity, collect the facilities that offer the activity -->
-
-			<% act.facility_activities.collect { |a| a.facility} %>
+				<% act.facility_activities.collect { |a| a.facility} %>
 
 <!-- for each neighborhood that offers the activity, print the neighborhood name -->
-
-			<% act.neighborhoods.each do |neigh| %>
-				<p>Neighborhood: <%= neigh.name %></p>
+				<ul>
+				<% act.neighborhoods.each do |neigh| %>
+					<li><%= neigh.name %>
 
 <!-- for each facility that offers the activity, if it's in the neighborhood, print the facility name and phone -->
-			<% act.facilities.each do  |fac| %>
-					<% if neigh.name == fac.neighborhood.name %> 
-						<p>Facility Name: <%= fac.name %></p>
-						<p>Phone: <%= fac.phone %></p>
-						<p>Website: <%= fac.website %></p><br>
-					<% end %>
-				<% end %>	
-			<% end %>
-
+						<ul>
+						<% act.facilities.each do  |fac| %>
+							<% if neigh.name == fac.neighborhood.name %>
+								<li><a href="<% fac.website %>" target="_blank"><%= fac.name %>,</a><br>
+								<span>Phone: <%= fac.phone %></span></li>
+							<% end %>
+						<% end %>
+						</ul>	
+				<% end %>
+				</ul>
 		<% end %>
+		</ul>
 <% end %>
