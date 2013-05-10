@@ -1,5 +1,9 @@
 FERRProject::Application.routes.draw do
 
+  get "comments/new"
+
+  get "comments/index"
+
 get "sessions/new"
 
 get "users/new"
