@@ -4,39 +4,38 @@
 <br />
 <br />
 <br />
-<% @activities.each do |act| %>
-
-<!-- for each activity print activity group and name -->
-
-	<p>Activity Group: <%= act.group %></p>
-	<p>Activity Name: <%= act.name %></p>
-	<br>
+<% @groups.each do |g| %>
+		
+	<% if !g.activities.empty? %> 
+		<p>Group name: <%= g.name %></p>
+	<% end %> 
+		
+		<% g.activities.each do |act| %>
+			<p>Activity name: <%= act.name %></p>
 
 <!-- for each activity, collect the neighborhoods that offer the activity -->
 
-	<% act.neighborhood_activities.collect { |a| a.neighborhood} %>
+			<% act.neighborhood_activities.collect { |a| a.neighborhood} %>
 
 <!-- for each activity, collect the facilities that offer the activity -->
 
-	<% act.facility_activities.collect { |a| a.facility} %>
+			<% act.facility_activities.collect { |a| a.facility} %>
+
 
 <!-- for each neighborhood that offers the activity, print the neighborhood name -->
 
 			<% act.neighborhoods.each do |neigh| %>
 				<p>Neighborhood: <%= neigh.name %></p>
-				<br>
 
-<!-- for each facility that offers the activity, if it's in the nieghborhood, print the facility name and phone -->
-				<% act.facilities.each do  |fac| %>
+<!-- for each facility that offers the activity, if it's in the neighborhood, print the facility name and phone -->
+			<% act.facilities.each do  |fac| %>
 					<% if neigh.name == fac.neighborhood.name %> 
 						<p>Facility Name: <%= fac.name %></p>
 						<p>Phone: <%= fac.phone %></p>
-						<p>Website: <%= fac.website %></p>
-						<br>
+						<p>Website: <%= fac.website %></p><br>
 					<% end %>
 				<% end %>	
 			<% end %>
-		
-	<br>
 
+		<% end %>
 <% end %>

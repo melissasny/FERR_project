@@ -1,0 +1,53 @@
+<div id="main-content">
+
+<h2>Find Your Fit</h2>
+
+<% @groups.each do |g| %>
+  <% if !g.activities.empty? %> 
+    <button type="button"><%= g.name %></button>
+  <% end %> 
+    
+    <ul class="button-class">
+    <% g.activities.each do |act| %>
+      <li class="sport"><%= act.name %>
+
+<!-- for each activity, collect the neighborhoods that offer the activity -->
+        <% act.neighborhood_activities.collect { |a| a.neighborhood} %>
+
+<!-- for each activity, collect the facilities that offer the activity -->
+        <% act.facility_activities.collect { |a| a.facility} %>
+
+<!-- for each neighborhood that offers the activity, print the neighborhood name -->
+        <ul>
+        <% act.neighborhoods.each do |neigh| %>
+          <li><%= neigh.name %>
+
+<!-- for each facility that offers the activity, if it's in the neighborhood, print the facility name and phone -->
+            <ul>
+            <% act.facilities.each do  |fac| %>
+              <% if neigh.name == fac.neighborhood.name %>
+                <li><%= link_to "#{fac.name}", "#{fac.website}", :target => '_blank' %><br>
+                <span>Phone: <%= fac.phone %></span></li>
+              <% end %>
+            <% end %>
+            </ul> 
+        <% end %>
+        </ul>
+    <% end %>
+    </ul>
+<% end %>			
+
+</div><!--close main-content -->
+
+    <div id="map">
+
+      <h2></h2>
+
+      <div id="flexible-container">
+
+          <!--TO DO - replace picture -->
+          <img src="http://placekitten.com/480/400" alt="kitten photo" />
+          
+      </div> 
+
+    </div>
