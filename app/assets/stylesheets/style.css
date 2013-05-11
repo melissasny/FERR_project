@@ -61,6 +61,10 @@ body{
      margin:auto;
 }
 
+#flash_alert {
+     color: red;
+}
+
 header{
      width:100%;
      color:#FFF;
