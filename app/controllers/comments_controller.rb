@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   private
   def ensure_user_is_logged_in
     unless current_user
-      redirect_to root_url, alert: "Please log-in to comment. First-time visitors please sign-up."
+      redirect_to root_url, alert: "***Please log-in to comment. First-time visitors please sign-up***"
     end  
   end
 end
