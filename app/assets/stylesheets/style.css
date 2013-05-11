@@ -68,10 +68,16 @@ header{
      margin-bottom:2em;
 }
 
-#flash_alert, header p{
+header p{
      color:#FFF51A;
      text-align:right;
      padding-right:2.5%;
+}
+
+#flash_alert{
+     color:red;
+     font-weight: bold;
+     text-align:center;
 }
 
 h1{
