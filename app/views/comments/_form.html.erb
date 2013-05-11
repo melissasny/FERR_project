@@ -5,7 +5,7 @@
     <p><%= f.select :facility_id, options_from_collection_for_select(Facility.order("name"), 'id', 'name') %></p>
 
 	<p><%= f.label "Enter your comment here: " %></p>
-	<p><%= text_area_tag :content, nil, :size => "40x10" %></p>
+	<p><%= f.text_area :content, :size => "40x10" %></p>
 	
 	<p><%= f.submit ("Submit Comment") %></p>
 <% end %>

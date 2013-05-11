@@ -3,6 +3,6 @@ class Comment < ActiveRecord::Base
 
   validates_presence_of :content, :on => :create
 
-  belongs_to :user_id
+  belongs_to :user
   belongs_to :facility
 end

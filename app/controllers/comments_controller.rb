@@ -7,9 +7,9 @@ class CommentsController < ApplicationController
 
   def create
   	@comment = Comment.new(params[:comment])
-    # @comment.user_id = current_user.id
+    @comment.user_id = @current_user.id
   	if @comment.save
-  		redirect_to log_in_path
+  		redirect_to root_url
   	else
   		render "new"
   	end
