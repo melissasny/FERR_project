@@ -20,6 +20,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'seed_dump'
+
 group :development, :test do
 	gem 'sqlite3'
 	gem 'sqlite3-ruby'
