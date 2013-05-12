@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 	"use strict";
 
+/* Applies to static_pages#welcome */
+
 	$("ul li").attr("onclick","return true"); 
 
 	var splashHandler = function(){
@@ -60,5 +62,12 @@ $(document).ready(function(){
 /*Click on a neighborhood */
 	$('ul>li.sport>ul>li').click(neighborhoodHandler);
 	$('ul>li.sport>ul>li').mousedown(neighborhoodHandler);
+
+
+/* Apply to the views for new user, new session and new comments, respectively */
+
+	$('input#user_first_name').focus();
+	$('input#user_name').focus();
+	$('textarea').focus(); 
 
 });
