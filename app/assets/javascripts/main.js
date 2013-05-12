@@ -28,7 +28,7 @@ $(document).ready(function(){
 		$('#pedal>li').show();
 	};
 
-	var sportHandler = function(){
+	var activityHandler = function(){
 		/*close all open neighborhood facility lists*/
 /*		$('ul>li.sport>ul>li>ul>li').hide(); */
 		/*close all open neighborhood lists*/
@@ -53,9 +53,9 @@ $(document).ready(function(){
 	$('button.pedal').click(pedalHandler);
 	$('button.pedal').mousedown(pedalHandler);
 
-/*Click on a sport */
-	$('ul>li').click(sportHandler);
-	$('ul>li').mousedown(sportHandler);
+/*Click on an activity */
+	$('ul>li').click(activityHandler);
+	$('ul>li').mousedown(activityHandler);
 
 /*Click on a neighborhood */
 	$('ul>li.sport>ul>li').click(neighborhoodHandler);
