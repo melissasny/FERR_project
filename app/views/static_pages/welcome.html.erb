@@ -1,213 +1,43 @@
-	 <div id="main-content">
+<div id="main-content">
 
-			<h2>Find Your Fit</h2>
+<h2>Find Your Fit</h2>
 
-			<button type="button" class="gyms">Hit the Gym (TBD)</button>
+<% @groups.each do |g| %>
+  <% if !g.activities.empty? %> 
+    <button type="button"><%= g.name %></button>
+  <% end %> 
+    
+    <ul class="button-class">
+    <% g.activities.each do |act| %>
+      <li class="sport"><%= act.name %>
 
-        <ul id="gyms" class="button-class">
-          <li class="sport">Fitness Clubs</li>
-        </ul>
+<!-- for each activity, collect the neighborhoods that offer the activity -->
+        <% act.neighborhood_activities.collect { |a| a.neighborhood} %>
 
-			<button type="button" class="splash">Make a Splash</button>
+<!-- for each activity, collect the facilities that offer the activity -->
+        <% act.facility_activities.collect { |a| a.facility} %>
 
-        <ul id="splash" class="button-class">
-          <li class="sport">Swimming  
+<!-- for each neighborhood that offers the activity, print the neighborhood name -->
+        <ul>
+        <% act.neighborhoods.each do |neigh| %>
+          <li><%= neigh.name %>
+
+<!-- for each facility that offers the activity, if it's in the neighborhood, print the facility name and phone -->
             <ul>
-              <li>Battery Park City
-                <ul>
-                  <li><a href="http://www.communitycenteratstuyvesanthighschool.org" target="_blank">Community Center at Stuyvesant H.S.,</a><br><span>Phone: 646.210.4292</span></li>
-                </ul>
-              <li>Chelsea
-                <ul>
-                  <li><a href="http://www.chelseapiers.com/sc/" target="_blank">Chelsea Piers - The Sports Center,</a><br><span>Phone: 212.336.6000</span></li>
-                  <li><a href="http://www.ymcanyc.org/mcburney" target="_blank">McBurney YMCA,</a>
-                    <br><span>Phone: 212.912.2300</span></li>
-                </ul>
-              <li>Chinatown
-                <ul>
-                  <li><a href="http://www.ymcanyc.org/chinatown" target="_blank">Chinatown YMCA,</a>
-                    <br><span>Phone: 212.912.2460</span></li>
-                </ul>
-              <li>Gramercy/Flatiron
-                <ul>
-                  <li><a href="http://www.nycgovparks.org/facilities/recreationcenters/M164" target="_blank">Asser Levy Rec Center,</a><br><span>Phone: 212.447.2020</span></li>
-                </ul>
-              <li>Greenwich Village
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/printinghouse" target="_blank">Equinox Printing House,</a><br><span>Phone: 212.243.7600</span></li>
-                </ul>
-              <li>Midtown East
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/54th" target="_blank">Equinox E54,</a>
-                    <br><span>Phone: 212.277.5400</span></li>
-                  <li><a href="http://www.ymcanyc.org/vanderbilt" target="_blank">Vanderbilt YMCA,</a>
-                    <br><span>Phone: 212.912.2500</span></li>
-                </ul>
-              <li>Midtown West
-                <ul>
-                  <li><a href="http://www.mphc.com" target="_blank">Manhattan Plaza Health Club,</a>
-                    <br><span>Phone: 212.563.7001</span></li>
-                </ul>
-              <li>Upper East Side
-                <ul>
-                  <li><a href="http://www.asphaltgreen.org" target="_blank">Asphalt Green,</a>
-                    <br><span>Phone: 212.369.8890</span></li>
-                  <li><a href="http://www.92y.org/Aquatics" target="_blank">92nd Street Y,</a>
-                    <br><span>Phone: 212.415.5500</span></li>
-                </ul>
-              <li>Upper Manhattan
-                <ul>
-                  <li><a href="http://www.nysparks.com/parks/93/details.aspx" target="_blank">Riverbank State Park,</a><br><span>Phone: 212.694.3600</span></li>
-                </ul>
-              <li>Upper West Side
-                <ul>
-                  <li><a href="http://www.jccmanhattan.org" target="_blank">JCC,</a>
-                    <br><span>Phone: 646.505.4444</span></li>
-                  <li><a href="http://www.reeboksportsclubny.com" target="_blank">Reebok Club,</a>
-                    <br><span>Phone: 212.362.6800</span></li>
-                  <li><a href="http://www.ymcanyc.org/westside/about" target="_blank">West Side YMCA,</a>
-                    <br><span>Phone: 212.912.2600</span></li>
-                </ul>
-            </ul>
-          <li class="sport">Sailing
-            <ul>
-              <li>Albany
-                <ul>
-                  <li>Herman K Lane</li>
-                </ul>
-              <li>Clearwater
-                <ul>
-                  <li>Riverside Drive North</li>
-                </ul>
-            </ul>
-        </ul> 
-
-			<button type="button" class="ball-games">Ball Games (TBD)</button>
-
-        <ul id="ball-games" class="button-class">
-          <li class="sport">Ball Games</li>
+            <% act.facilities.each do  |fac| %>
+              <% if neigh.name == fac.neighborhood.name %>
+                <li><%= link_to "#{fac.name}", "#{fac.website}", :target => '_blank' %><br>
+                <span>Phone: <%= fac.phone %></span></li>
+              <% end %>
+            <% end %>
+            </ul> 
+        <% end %>
         </ul>
+    <% end %>
+    </ul>
+<% end %>			
 
-			<button type="button" class="pedal">Pedal to the Metal</button>
-
-        <ul id="pedal" class="button-class">
-          <li class="sport">Studio Cycling
-            <ul>
-              <li>Chelsea
-                <ul>
-                  <li><a href="http://www.davidbartongym.com/dbgyms/New_York_Chelsea.php" 
-                    target="_blank">David Barton Gym W23,</a><br><span>Phone: 212.414.2022</span></li>
-                  <li><a href="http://www.equinox.com/clubs/17th" target="_blank">Equinox W17,</a>
-                    <br><span>Phone: 212.367.0863</span></li>
-                  <li><a href="http://new-york.flywheelsports.com/locations/flatiron" 
-                    target="_blank">Flywheel W21,</a><br><span>Phone: 212.242.9433</span></li>
-                </ul>
-              <li>East Village
-                <ul>
-                  <li><a href="http://www.davidbartongym.com/dbgyms/New_York_Astor_Place.php" 
-                    target="_blank">David Barton Gym Astor Pl,</a><br><span>Phone: 212.505.6800</span></li>
-                </ul>
-              <li>Financial District
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/wallstreet" target="_blank">Equinox Wall St.,</a>
-                    <br><span>Phone: 212.964.6688</span></li>
-                </ul>
-              <li>Gramercy/Flatiron
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/19th" target="_blank">Equinox Bway/19,</a>
-                    <br><span>Phone: 212.780.9300</span></li>
-                  <li><a href="http://www.soul-cycle.com/soul-east/soul-union-square.cfm" 
-                    target="_blank">Soul Cycle E18,</a><br><span>Phone: 212.208.1300</span></li>
-                </ul>
-              <li>Greenwich Village
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/greenwich" target="_blank">Equinox Village,</a>
-                    <br><span>Phone: 212.620.0103</span></li>
-                  <li><a href="http://www.equinox.com/clubs/printinghouse" 
-                    target="_blank">Equinox Printing House,  </a><br><span>Phone: 212.243.7600</span></li>
-                  <li><a href="http://www.soul-cycle.com" target="_blank">Soul Cycle Village,</a>
-                    <br><span>Opening June 2013</span></li>
-                </ul>
-              <li>Midtown East 
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/park" target="_blank">Equinox Park Ave,</a>
-                    <br><span>Phone: 212.779.1727</span></li>
-                  <li><a href="http://www.equinox.com/clubs/43rd" target="_blank">Equinox E43,</a>
-                    <br><span>Phone: 212.972.8000</span></li>
-                  <li><a href="http://www.equinox.com/clubs/44th" target="_blank">Equinox E44,</a>
-                    <br><span>Phone: 212.953.2499</span></li>
-                  <li><a href="http://www.equinox.com/clubs/54th" target="_blank">Equinox E54,</a>
-                    <br><span>Phone: 212.277.5400</span></li>
-                </ul>
-              <li>Midtown West
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/rockefeller" target="_blank">Equinox Rock Plaza,</a>
-                    <br><span>Phone: 212.218.8600</span></li>
-                  <li><a href="http://www.equinox.com/clubs/50th" target="_blank">Equinox W50,</a>
-                    <br><span>Phone: 212.541.7000</span></li>
-                </ul>
-              <li>Noho
-                <ul>
-                  <li><a href="http://www.soul-cycle.com/soul-east/soul-noho.cfm" 
-                    target="_blank">Soul Cycle Lafayette,</a><br><span>Phone: 212.860.1300</span></li>
-                </ul>
-              <li>Soho
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/soho" target="_blank">Equinox Prince St.,</a>
-                    <br><span>Phone: 212.334.4631</span></li>
-                  <li><a href="http://www.soul-cycle.com" target="_blank">Soul Cycle Soho,</a>
-                    <br><span>Opening June 2013</span></li>
-                </ul>
-              <li>Tribeca
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/tribeca" target="_blank">Equinox Murray St.,</a>
-                    <br><span>Phone: 212.566.6555</span></li>
-                  <li><a href="http://www.soul-cycle.com/soul-east/soul-tribeca.cfm" 
-                    target="_blank">Soul Cycle Warren St.,</a><br><span>Phone: 212.406.1300</span></li>
-                </ul>
-              <li>Upper East Side
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/63rd" target="_blank">Equinox E63,</a>
-                    <br><span>Phone: 212.750.4900</span></li>
-                  <li><a href="http://www.equinox.com/clubs/74th" target="_blank">Equinox E74,</a>
-                    <br><span>Phone: 212.249.3917</span></li>
-                  <li><a href="http://www.equinox.com/clubs/85th" target="_blank">Equinox E85,</a>
-                    <br><span>Phone: 212.439.8500</span></li>
-                  <li><a href="http://new-york.flywheelsports.com/locations/upper-east-side" 
-                    target="_blank">Flywheel E67,</a><br><span>Phone: 212.327.1217</span></li>
-                  <li><a href="http://www.soul-cycle.com/soul-east/soul-east-63.cfm" 
-                    target="_blank">Soul Cycle E63,</a><br><span>Phone: 212.996.1300</span></li>
-                  <li><a href="http://www.soul-cycle.com/soul-east/soul-east-83.cfm" 
-                    target="_blank">Soul Cycle E83,</a><br><span>Phone: 212.639.1300</span></li>
-                </ul>
-              <li>Upper West Side
-                <ul>
-                  <li><a href="http://www.equinox.com/clubs/columbuscircle" target="_blank">Equinox Col Circle,
-                    </a><br><span>Phone: 212.871.0425</span></li>
-                  <li><a href="http://www.equinox.com/clubs/76th" target="_blank">Equinox W76,</a>
-                    <br><span>Phone: 212.496.2374</span></li>
-                  <li><a href="http://www.equinox.com/clubs/92nd" target="_blank">Equinox W92,</a>
-                    <br><span>Phone: 212.799-1818</span></li>
-                  <li><a href="http://new-york.flywheelsports.com/locations/upper-west-side" 
-                    target="_blank">Flywheel W81,</a><br><span>Phone: 212.242.5161</span></li>
-                  <li><a href="http://www.soul-cycle.com/soul-east/soul-west-77.cfm" target="_blank">Soul Cycle W77,</a><br><span>Phone: 212.787.1300</span></li>
-                </ul>
-            </ul>
-        </ul>
-
-			<button type="button" class="dance">Dance Your #$% Off!(TBD)</button>
-
-        <ul id="dance" class="button-class">
-          <li class="sport">Dance Studios</li>
-        </ul>
-
-			<button type="button" class="bliss">Find Your Bliss(TBD)</button>
-
-        <ul id="bliss" class="button-class">
-          <li class="sport">Yoga</li>
-        </ul>
-
-		</div>
+</div><!--close main-content -->
 
     <div id="map">
 

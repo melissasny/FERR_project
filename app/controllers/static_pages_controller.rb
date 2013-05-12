@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-	def welcome2	
+	def welcome	
 #	def test2
 		@users = User.all
 		@comments = Comment.all
