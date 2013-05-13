@@ -4,5 +4,5 @@
 <% @sorted_facility_comments.each do |comm| %>
 	<p>Comment: <%= comm.content %></p>
     <p>Posted by: <%= comm.user.user_name %> on 
-    	<%= comm.created_at.strftime("on %B %e, %Y at %I:%M %p") %></p>
+    	<%= comm.created_at.strftime("%B %e, %Y at %I:%M %p") %></p>
 <% end %>
