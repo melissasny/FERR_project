@@ -11,5 +11,7 @@ class FacilitiesController < ApplicationController
 
 	def show
 		@facility = Facility.find(params[:id])
+#Sort comments for the selected facility in reverse chronological order based on date and time created
+		@sorted_facility_comments = @facility.comments.sort_by {|created_at, datetime| datetime}.reverse
 	end
 end

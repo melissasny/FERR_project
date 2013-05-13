@@ -1,8 +1,8 @@
-<p>Facility: <%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %></p>
-<p>Phone: <%= @facility.phone %></p>
+<p>User comments for: <%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %>, phone: 
+	<%= @facility.phone %></p>
 
-<% sorted_facility_comments = @facility.comments.sort_by {|created_at, datetime| datetime}.reverse %>
-<% sorted_facility_comments.each do |comm| %>
-	<p><%= comm.content %></p>
-    <p>Posted by: <%= comm.user.user_name %> on <%= comm.created_at %></p>
+<% @sorted_facility_comments.each do |comm| %>
+	<p>Comment: <%= comm.content %></p>
+    <p>Posted by: <%= comm.user.user_name %> on 
+    	<%= comm.created_at.strftime("on %B %e, %Y at %I:%M %p") %></p>
 <% end %>
