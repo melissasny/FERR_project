@@ -8,5 +8,4 @@ class StaticPagesController < ApplicationController
 		@activities = Activity.all
 		@neighborhoods = Neighborhood.all
 	end
-
 end
