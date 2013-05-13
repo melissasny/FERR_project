@@ -1,5 +1,8 @@
+<%= will_paginate @facility_comments %>
+<br>
+
 <p>User comments for: <%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %>, phone: 
-	<%= @facility.phone %></p>
+	<%= @facility.phone %></p><br>
 
 <% @sorted_facility_comments.each do |comm| %>
 	<p>Comment: <%= comm.content %></p>
