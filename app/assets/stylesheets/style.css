@@ -48,12 +48,12 @@ body{
 
      background:#000 url(/assets/manhattan-skyline-night-new-york-city-black-and-white.jpg) no-repeat;
      /*include browser-specific prefixes for CSS3 element*/
- 
+
      -webkit-background-size: cover; 
      -ie-background-size: cover; 
      background-size:cover;
 
-/*    background-color:white; */  
+/*     background-color:white; */   
 }
 
 #container{

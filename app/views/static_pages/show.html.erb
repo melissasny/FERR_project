@@ -1,9 +1,0 @@
-<p>This is view/static_pages/show.html.erb</p>
-
-<p><%= facility.name %><p>
-<p><%= facility.phone %></p>
-
-<% facility.comments.each do |comm| %>
-	<p><%= comm.content %></p>
-    <p>Posted by: <%= comm.user.user_name %> on <%= comm.created_at %></p>
-<% end %>

@@ -1,0 +1,7 @@
+<p>Facility: <%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %></p>
+<p>Phone: <%= @facility.phone %></p>
+
+<% @facility.comments.each do |comm| %>
+	<p><%= comm.content %></p>
+    <p>Posted by: <%= comm.user.user_name %> on <%= comm.created_at %></p>
+<% end %>

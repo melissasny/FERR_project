@@ -1,5 +1,5 @@
-class StaticPagesController < ApplicationController
-	def welcome	
+class FacilitiesController < ApplicationController
+	def index	
 #	def test
 		@users = User.all
 		@comments = Comment.all
