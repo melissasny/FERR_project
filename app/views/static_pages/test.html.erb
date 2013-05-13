@@ -33,6 +33,10 @@
 						<p>Facility Name: <%= fac.name %></p>
 						<p>Phone: <%= fac.phone %></p>
 						<p>Website: <%= fac.website %></p><br>
+						<% fac.comments.each do |comm| %>
+							<p><%= comm.content %></p>
+							<p><%= comm.user_id %></p>
+						<% end %>
 					<% end %>
 				<% end %>	
 			<% end %>

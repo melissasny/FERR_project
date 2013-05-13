@@ -8,7 +8,7 @@ get "sessions/new"
 
 get "users/new"
 
-#get "home" => "static_pages#test2", :as => "home"
+#get "home" => "static_pages#test", :as => "home"
 
 get "home" => "static_pages#welcome", :as => "home"
 get "sign_up" => "users#new", :as => "sign_up"
@@ -19,10 +19,11 @@ get "show_comment" => "static_pages#show", :as => "show_comment"
 
 root :to => "static_pages#welcome"
 
-#root :to => "static_pages#test2"
+#root :to => "static_pages#test"
 
-resource :users
-resource :sessions
-resource :comments
+resources :users
+resources :sessions
+resources :comments
+resources :facilities
   
 end
