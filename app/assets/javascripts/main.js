@@ -32,14 +32,15 @@ $(document).ready(function(){
 
 	var buttonHandler = function(){
 		/*assign the button class to a temp variable*/
-		temp = $(this).css('class');
+		var curr_class = $(this).attr('class');
 		/*close all open sport lists*/
 		$('ul>li.sport').hide();
 		/*close all open neighborhood lists*/
 		$('ul>li.sport>ul>li').hide();
 		/*close all open neighborhood facility lists*/
 		$('ul>li.sport>ul>li>ul>li').hide(); 
-		$('#'+temp+'>li').show();
+		/*open the unordered list with the same id as the button class*/
+		$('#' + curr_class + '>li').show();
 	};
 
 	var activityHandler = function(){

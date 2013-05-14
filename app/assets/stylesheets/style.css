@@ -276,7 +276,7 @@ ul{
 }
 
 li{
- /*    display:none; */    
+     display:none;   
      width:80%;
      color:#46FF00;
      font-weight:bold;
