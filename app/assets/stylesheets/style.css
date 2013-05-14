@@ -53,7 +53,8 @@ body{
      -ie-background-size: cover; 
      background-size:cover;
 */
-     background-color:white;   
+     background-color:white; 
+   
 }
 
 #container{
@@ -106,6 +107,7 @@ h2{
 
 /* map title */
 #map h2{
+     display:none;
      position:relative; 
      top:0;
      left:0;  
@@ -118,6 +120,10 @@ h2{
      color:#000;
      margin:0;
      padding:0;
+}
+
+.map-embed {
+     display:none;
 }
 
 nav{
@@ -270,7 +276,7 @@ ul{
 }
 
 li{
- /*    display:none; */  
+ /*    display:none; */    
      width:80%;
      color:#46FF00;
      font-weight:bold;

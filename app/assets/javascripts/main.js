@@ -30,6 +30,18 @@ $(document).ready(function(){
 		$('#pedal>li').show();
 	};
 
+	var buttonHandler = function(){
+		/*assign the button class to a temp variable*/
+		temp = $(this).css('class');
+		/*close all open sport lists*/
+		$('ul>li.sport').hide();
+		/*close all open neighborhood lists*/
+		$('ul>li.sport>ul>li').hide();
+		/*close all open neighborhood facility lists*/
+		$('ul>li.sport>ul>li>ul>li').hide(); 
+		$('#'+temp+'>li').show();
+	};
+
 	var activityHandler = function(){
 		/*close all open neighborhood facility lists*/
 /*		$('ul>li.sport>ul>li>ul>li').hide(); */
@@ -49,12 +61,15 @@ $(document).ready(function(){
 	};
 
 /*Click on a button */
+	$('button').click(buttonHandler);
+	$('button').mousedown(buttonHandler);
+/*
 	$('button.splash').click(splashHandler);
 	$('button.splash').mousedown(splashHandler);
 
 	$('button.pedal').click(pedalHandler);
 	$('button.pedal').mousedown(pedalHandler);
-
+*/
 /*Click on an activity */
 	$('ul>li').click(activityHandler);
 	$('ul>li').mousedown(activityHandler);

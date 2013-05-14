@@ -3,13 +3,13 @@
 <h2>Find Your Fit</h2>
 
 <% @groups.each do |g| %>
-  <% if !g.activities.empty? %> 
-    <button type="button"><%= g.name %></button>
+  <% if !g.activities.empty? %>
+    <button type="button" class=<%= "grp" + g.id.to_s %>><%= g.name %></button>
   <% end %> 
     
-    <ul class="button-class">
+    <ul id=<%= "grp" + g.id.to_s %>>
     <% g.activities.each do |act| %>
-      <li class="sport"><%= act.name %>
+      <li class="sport" id=<%= "act" + act.id.to_s %>><%= act.name %>
 
 <!-- for each activity, collect the neighborhoods that offer the activity -->
         <% act.neighborhood_activities.collect { |a| a.neighborhood} %>
@@ -26,7 +26,8 @@
             <ul>
             <% act.facilities.each do  |fac| %>
               <% if neigh.name == fac.neighborhood.name %>
-                <li><%= link_to "#{fac.name}", "#{fac.website}", :target => '_blank' %><br>
+                <li><%= link_to "#{fac.name}", "#{fac.website}", 
+                :target => '_blank' %><br>
                 <span>Phone: <%= fac.phone %></span><br>
                 <%= link_to "Comments", fac %><br><br></li>
               <% end %>
@@ -42,13 +43,18 @@
 
     <div id="map">
 
-      <h2></h2>
+      <h2><%= render 'activity_map_titles/act3_title' %></h2>
 
       <div id="flexible-container">
-
+        
           <!--TO DO - replace picture -->
+
           <img src="http://placekitten.com/480/400" alt="kitten photo" />
-          
+
+        <div class="map-embed">
+        
+          <%= render 'activity_maps/act3' %>  
+        </div> <!-- close map-embed -->  
       </div> 
 
     </div>
