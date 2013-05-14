@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   private
   def ensure_user_is_logged_in
     unless current_user
-      redirect_to root_url, alert: "Please sign-up and log-in to comment."
+      redirect_to :back, alert: "Please sign-up and log-in to comment."
     end  
   end
 end

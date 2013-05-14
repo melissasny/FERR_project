@@ -8,8 +8,6 @@ get "sessions/new"
 
 get "users/new"
 
-#get "home" => "facilities#test", :as => "home"
-
 get "home" => "facilities#index", :as => "home"
 get "sign_up" => "users#new", :as => "sign_up"
 get "log_in" => "sessions#new", :as => "log_in"
@@ -18,8 +16,6 @@ get "new_comment" => "comments#new", :as => "new_comment"
 get "show_comment" => "facilities#show", :as => "show_comment"
 
 root :to => "facilities#index"
-
-#root :to => "facilities#test"
 
 resources :users
 resources :sessions

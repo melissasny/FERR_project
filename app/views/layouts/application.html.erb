@@ -23,13 +23,13 @@
 
       <nav>
         <%= link_to "Home", home_path%>
-        <%= link_to "Comments", show_comment_path %>
         <% if current_user %>
           <%= link_to "Logout", log_out_path %>
         <% else %>
           <%= link_to "Sign-up", sign_up_path %>
           <%= link_to "Login", log_in_path %> 
         <% end %>
+        <%= link_to "Comment", new_comment_path %>
       </nav>
       
       <p>
@@ -46,8 +46,6 @@
 
     </header>
     
-	
-
 <%= yield %>
 
   </div><!--close container-->
