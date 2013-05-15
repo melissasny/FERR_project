@@ -24,15 +24,18 @@ $(document).ready(function(){
 	};
 
 	var activityHandler = function(){
-		var currAct = $(this).attr('id');
-		/*display the activity map and title for the activity clicked*/
-/*		$('img').hide();
-		$('div .' + curr_act).show();
-		$('#flexible-container').html('<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004d6e3b22526a73bd44&amp;ie=UTF8&amp;t=m&amp;ll=40.778722,-73.969574&amp;spn=0.129988,0.145912&amp;z=12&amp;output=embed"></iframe>');
-		$('#map h2').text('Manhattan Swimming Pools');
-*/		
-		$('#flexible-container').html(act1.code);
-		$('#map h2').text(act1.title);
+		/*determine which map to display*/
+		var currAct;
+		var temp = $(this).attr('id');
+		switch (temp){
+			case "act1": currAct = act1
+				break;
+			case "act3": currAct = act3
+				break;
+			default: currAct;
+		}
+		$('#flexible-container').html(currAct.code);
+		$('#map h2').text(currAct.title);
 		/*close all open neighborhood lists*/
 		$('ul>li.sport>ul>li').hide(); 
 		$(this).addClass('selected');
