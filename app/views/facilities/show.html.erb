@@ -3,13 +3,12 @@
 <%= will_paginate @facility_comments %>
 <br>
 
-<p><%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %></p>
-<p>Phone: <%= @facility.phone %></p>
+<h4><%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %>, Phone: <%= @facility.phone %></h4>
 
 <% @sorted_facility_comments.each do |comm| %>
 	<div class="display_comment">
-		<p>Comment: <%= comm.content %></p>
-	    <p>- posted by <%= comm.user.user_name %> on 
+		<p><span>Comment: </span><%= comm.content %></p>
+	    <p><span>- posted by: </span><%= comm.user.user_name %> on 
 	    	<%= comm.created_at.strftime("%B %e, %Y at %I:%M %p") %></p>
 	</div>
 <% end %>
