@@ -30,11 +30,10 @@ $(document).ready(function(){
 		/*determine which map to display*/
 		temp = $(this).attr('id');
 		switch (temp){
-			case "act1": currAct = act1
+			case "act1": currAct = act1;
 				break;
-			case "act3": currAct = act3
+			case "act3": currAct = act3;
 				break;
-			default: currAct;
 		}
 		$('#flexible-container').html(currAct.code);
 		$('#map h2').text(currAct.title);

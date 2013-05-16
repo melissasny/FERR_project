@@ -3,7 +3,7 @@
 <h2>Find Your Fit</h2>
 
 <% @groups.each do |g| %>
-  <% if !g.activities.empty? %>
+   <% if !g.activities.empty? %> 
     <button type="button" class=<%= "grp" + g.id.to_s %>><%= g.name %></button>
   <% end %> 
     
