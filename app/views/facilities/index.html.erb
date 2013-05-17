@@ -9,7 +9,7 @@
     
     <ul id=<%= "grp" + g.id.to_s %>>
     <% g.activities.each do |act| %>
-      <li class="sport" id=<%= "act" + act.id.to_s %>><%= act.name %>
+      <li class="sport"><%= act.name %>
 
 <!-- for each activity, collect the neighborhoods that offer the activity -->
         <% act.neighborhood_activities.collect { |a| a.neighborhood} %>
