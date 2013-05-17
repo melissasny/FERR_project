@@ -52,8 +52,6 @@ body{
      -webkit-background-size: cover; 
      -ie-background-size: cover; 
      background-size:cover;
-
- /*    background-color:white; */ 
 }
 
 #container{
@@ -163,10 +161,6 @@ nav a:hover{
 img{
      position:absolute;
      width:100%; 
-}
-
-div .act1, div .act3{
-     display:none;
 }
 
 #flexible-container iframe,   
