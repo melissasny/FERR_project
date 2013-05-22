@@ -418,7 +418,12 @@ h4 {
      #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments{
           width:100%;
           margin:0;
+     }
+     form#new_user, #new-session{
           padding-left:25%;
+     }
+     form#new_comment{
+          padding-left:20%;
      }
      ul{
           line-height:2.5em;
