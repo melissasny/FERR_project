@@ -389,15 +389,15 @@ h4 {
     nav{
      font-size:1.8em;
     }
-    form#new_user, #new-session{
+    form#new_user, #new-session, form#new_comment{
      width:60%;
      margin-left:20%;
-     padding-left:20%;
     }
-    form#new_comment{
-     width:60%;
-     margin-left:20%;
-     padding-left:5%;
+    form#new_user{
+     padding-left:10%;
+    }
+    #new-session{
+     padding-left:15%;
     }
 }
 
