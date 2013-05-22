@@ -3,8 +3,7 @@
 <%= will_paginate @facility_comments %>
 <br>
 
-<h4><%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %></h4>
-<h4>Phone: <%= @facility.phone %></h4>
+<h4><%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %>, <%= @facility.phone %></h4>
 
 <% @facility_comments.each do |comm| %>
 	<div class="display_comment">
