@@ -396,13 +396,13 @@ h4 {
     #new-session{
      width:50%;
      margin-left:25%;
-     padding-left:10%;
+     padding-left:12%;
     }
     form#new_user{
      padding-left:10%;
     }
     form#new_comment{
-     padding-left:3%;
+     padding-left:5%;
     }
 }
 
