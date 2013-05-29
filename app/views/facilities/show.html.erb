@@ -5,7 +5,7 @@
 
 <h4><%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %>, <%= @facility.phone %></h4>
 
-<% @facility_comments.each do |comm| %>
+<% @facility_comments.order('updated_at DESC').each do |comm| %>
 	<div class="display_comment">
 		<p><span>Comment: </span><%= comm.content %></p>
 	    <p><span>- posted by: </span><%= comm.user.user_name %> on 

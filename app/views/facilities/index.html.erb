@@ -8,7 +8,7 @@
   <% end %> 
     
     <ul id=<%= "grp" + g.id.to_s %>>
-    <% g.activities.each do |act| %>
+    <% g.activities.order('name').each do |act| %>
       <li class="sport"><%= act.name %>
 
 <!-- for each activity, collect the neighborhoods that offer the activity -->
@@ -19,12 +19,12 @@
 
 <!-- for each neighborhood that offers the activity, print the neighborhood name -->
         <ul>
-        <% act.neighborhoods.each do |neigh| %>
+        <% act.neighborhoods.order('name').each do |neigh| %>
           <li><%= neigh.name %>
 
 <!-- for each facility that offers the activity, if it's in the neighborhood, print the facility name and phone -->
             <ul>
-            <% act.facilities.each do  |fac| %>
+            <% act.facilities.order('name').each do  |fac| %>
               <% if neigh.name == fac.neighborhood.name %>
                 <li><%= link_to "#{fac.name}", "#{fac.website}", 
                 :target => '_blank' %><br>
