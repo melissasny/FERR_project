@@ -478,16 +478,16 @@ h4 {
      nav{
           font-size:1.0em;
      }
-     form#new_user, #new-session, form#new_comment{
+     form#new_user, #new-session{
           font-size:1.0em;
      }
-     form#new_user{
-          padding-left:2%;
+     form#new_comment{
+          font-size:0.8em;
      }
      #new-session{
           padding-left:5%;
      }
-     form#new_comment{
-          padding-left:0;
+     form#new_comment, form#new_user{
+          padding-left:1%;
      }
 }
