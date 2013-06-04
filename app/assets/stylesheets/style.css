@@ -480,5 +480,6 @@ h4 {
      }
      form#new_user, #new-session, form#new_comment{
           padding-left:0;
+          font-size:1.0em;
      }
 }
