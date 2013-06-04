@@ -471,7 +471,7 @@ h4 {
      }
 }
 
-@media screen and (max-width:330px){
+@media screen and (max-width:360px){
      h1, h3, #flash_alert, #flash_notice{
           font-size:1.4em;
      }
