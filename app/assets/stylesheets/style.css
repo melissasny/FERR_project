@@ -481,10 +481,10 @@ h4 {
      form#new_comment{
           font-size:0.8em;
      }
-     #new-session{
+     #new-session, form#new_user{
           padding-left:5%;
      }
-     form#new_comment, form#new_user{
+     form#new_comment{
           padding-left:1%;
      }
      form#new_user input{
