@@ -478,19 +478,20 @@ h4 {
      nav, form#new_user, #new-session{
           font-size:1.0em;
      }
-     form#new_comment{
-          font-size:0.8em;
+     form#new_user{
+          padding-left:5%;
+     }
+     form#new_user input{
+          width:90%;
      }
      #new-session{
           padding-left: 10%;
      }
-     form#new_user{
-          padding-left:5%;
-     }
      form#new_comment{
+          font-size:0.8em;
           padding-left:1%;
      }
-     form#new_user input{
+     form#new_comment select, form#new_comment textarea{
           width:90%;
      }
      li a:nth-last-of-type(1){
