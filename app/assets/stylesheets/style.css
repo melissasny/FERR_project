@@ -399,14 +399,16 @@ h4 {
     #new-session{
           width:50%;
           margin-left:25%;
-          padding-left:12%;
+/*          padding-left:12%; */
     }
+/*
     form#new_user{
           padding-left:10%;
     }
     form#new_comment{
           padding-left:5%;
     }
+*/
 }
 
 @media screen and (max-width:900px){
@@ -437,6 +439,7 @@ h4 {
           width:100%;
           margin:0;
      }
+/*
      #new-session{
           padding-left:33%;
      }
@@ -446,6 +449,7 @@ h4 {
      form#new_comment{
           padding-left:20%;
      }
+*/
      ul{
           line-height:2.5em;
      }
@@ -481,7 +485,7 @@ h4 {
      nav, form#new_user, #new-session, form#new_comment{
           font-size:1.0em;
      }
-     form#new_user{
+/*     form#new_user{
           padding-left:5%;
      }
      #new-session{
@@ -490,6 +494,7 @@ h4 {
      form#new_comment{
           padding-left:1%;
      }
+*/
  /*    form#new_user input, #new-session input, form#new_comment select, form#new_comment textarea{
           width:90%;
      }
