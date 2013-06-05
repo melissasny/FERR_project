@@ -490,4 +490,8 @@ h4 {
      form#new_comment, form#new_user{
           padding-left:1%;
      }
+     li a:nth-last-of-type(1){
+     line-height:2em;
+}
+
 }
