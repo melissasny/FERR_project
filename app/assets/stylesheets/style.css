@@ -330,6 +330,9 @@ form#new_comment {
      background-color: rgba(0,0,0,0.7);
      color:#FFF;
 }
+ form#new_user input, #new-session input, form#new_comment select, form#new_comment textarea {
+          width:90%;
+}
 
 .pagination{
      text-align: right;
@@ -481,18 +484,16 @@ h4 {
      form#new_user{
           padding-left:5%;
      }
-     form#new_user input{
-          width:90%;
-     }
      #new-session{
           padding-left: 10%;
      }
      form#new_comment{
           padding-left:1%;
      }
-     form#new_comment select, form#new_comment textarea{
+ /*    form#new_user input, #new-session input, form#new_comment select, form#new_comment textarea{
           width:90%;
      }
+*/
      li a:nth-last-of-type(1){
           line-height:2em;
      }
