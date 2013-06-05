@@ -475,7 +475,7 @@ h4 {
      h1, h3, #flash_alert, #flash_notice{
           font-size:1.4em;
      }
-     nav, form#new_user, #new-session{
+     nav, form#new_user, #new-session, form#new_comment{
           font-size:1.0em;
      }
      form#new_user{
@@ -487,12 +487,9 @@ h4 {
      #new-session{
           padding-left: 10%;
      }
-     form#new_comment{
-          font-size:0.8em;
-          padding-left:1%;
-     }
      form#new_comment select, form#new_comment textarea{
           width:90%;
+          padding-left:5%;
      }
      li a:nth-last-of-type(1){
           line-height:2em;
