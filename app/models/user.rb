@@ -4,15 +4,15 @@ class User < ActiveRecord::Base
   attr_accessor :password
   before_save :encrypt_password
   before_save { |user| user.email = email.downcase }
-   before_save { |user| user.user_name = user_name.downcase }
+  before_save { |user| user.user_name = user_name.downcase }
 
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
   validates_presence_of :email
-  validates_uniqueness_of :email
+  validates_uniqueness_of :email.downcase
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :create
   validates_presence_of :user_name
-  validates_uniqueness_of :user_name
+  validates_uniqueness_of :user_name.downcase
   validates_length_of :user_name, :within => 6..10, :too_long => "maximum of 10 characters", :too_short => "at least 6 characters"
   validates_presence_of :first_name
   validates_presence_of :last_name
