@@ -2,7 +2,10 @@
 	<p><%= @comment.errors.full_messages.first %><p>
 
  	<p><%= f.label "Select a facility" %></p>
-    <p><%= f.select :facility_id, options_from_collection_for_select(Facility.order("name"), 'id', 'name') %></p>
+<!--    
+	<p><%= f.select :facility_id, options_from_collection_for_select(Facility.order("name"), 'id', 'name') %></p>
+-->
+    <p><%= f.select :facility_id, option_groups_from_collection_for_select(Neighborhood.order("name"), :facilities, :name, :id, :name) %></p>
 
 	<p><%= f.label "Enter your comment here: " %></p>
 	<p><%= f.text_area :content, :size => "40x10" %></p>
