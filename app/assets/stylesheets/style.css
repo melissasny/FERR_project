@@ -444,6 +444,9 @@ h4 {
      ul{
           line-height:2.5em;
      }
+     .display_comment img{
+          width:10%;
+     }
 }
 
 @media screen and (max-width:480px){
