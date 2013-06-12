@@ -6,7 +6,7 @@
 <h4><%= link_to "#{@facility.name}", "#{@facility.website}", :target => '_blank' %>, <%= @facility.phone %></h4>
 
 <% @facility_comments.order('updated_at DESC').each do |comm| %>
-	<div class="display_comment clearfix:after">
+	<div class="display_comment">
 		<%= gravatar_for(comm.user) %>
 		<p><span>Comment: </span><%= comm.content %></p>
 	    <p><span>- posted by: </span>  <%= comm.user.user_name %> on <%= comm.created_at.strftime("%B %e, %Y") %></p>
