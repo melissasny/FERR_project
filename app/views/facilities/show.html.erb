@@ -8,8 +8,10 @@
 <% @facility_comments.order('updated_at DESC').each do |comm| %>
 	<div class="display_comment group">
 		<%= gravatar_for(comm.user) %>
-		<p><span>Comment: </span><%= comm.content %></p>
-	    <p><span>- posted by: </span>  <%= comm.user.user_name %> on <%= comm.created_at.strftime("%B %e, %Y") %></p>
+		<div class="comment_text">
+			<p><span>Comment: </span><%= comm.content %></p>
+	    	<p><span>- posted by: </span>  <%= comm.user.user_name %> on <%= comm.created_at.strftime("%B %e, %Y") %></p>
+	    </div>
 	</div>
 <% end %>
 
