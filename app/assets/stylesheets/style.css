@@ -375,20 +375,13 @@ h4 {
      border:2px solid #46FF00;
 }
 
-.display_comment p{
-     margin-left:15%;
-} 
-
 .display_comment img{
      width:6%;
-     display:inline;
      position:static;
-     margin-top:0.5em;
-     margin-left: 1%;
-     margin-bottom: 1em;
+     margin-top:0.5em 15% 1em 1%;
 }
-
-.display_comment p:nth-of-type(1){
+/*
+.display_comment span:nth-of-type(1){
      padding: 0 5% 0 2%;
 }
 
@@ -396,7 +389,7 @@ h4 {
      padding-right:5%;
      padding-left: 6%;
 }
-
+*/
 .display_comment span{
      font-weight:bold;
 }
