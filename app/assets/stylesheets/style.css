@@ -377,11 +377,11 @@ h4 {
 
 .display_comment p{
      margin-left:15%;
-     display:inline;
 } 
 
 .display_comment img{
      width:6%;
+     display:inline;
      position:static;
      margin-top:0.5em;
      margin-left: 1%;
