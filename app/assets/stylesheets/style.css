@@ -380,13 +380,12 @@ h4 {
 } 
 
 .display_comment img{
+     display:inline-block;
      width:6%;
-     position:relative;
-     display:inline;
+     position:static;
      margin-top:0.5em;
      margin-left: 1%;
      margin-bottom: 1em;
-     padding-bottom:1em;
 }
 
 .display_comment p:nth-of-type(1){
