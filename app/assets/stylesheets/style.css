@@ -382,6 +382,7 @@ h4 {
 .display_comment img{
      width:6%;
      position:relative;
+     display:inline-block;
      margin-top:0.5em;
      margin-left: 1%;
      margin-bottom: 1em;
