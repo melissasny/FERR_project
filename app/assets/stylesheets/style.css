@@ -381,8 +381,7 @@ h4 {
 
 .display_comment img{
      width:6%;
-     position:relative;
-     float:left;
+     position:fixed;
      margin-top:0.5em;
      margin-left: 1%;
      margin-bottom: 1em;
