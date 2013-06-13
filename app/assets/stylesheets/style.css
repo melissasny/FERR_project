@@ -24,7 +24,7 @@ Developer @GA in NYC
      *zoom:1;
 }
 /******************************************************************************/
-/*Fit in the City-specific styling*/
+/*Fit in the City-specific styling for the app/views/facilities/index page*/
 /******************************************************************************/
 body{
      width:100%;
@@ -218,7 +218,7 @@ button#about-button{
      font-weight:bold;
 }
 /******************************************************************************/
-/*Styling for the nested lists*/
+/*Styling for the app/views/facilities/index nested lists*/
 /******************************************************************************/
 ul{
      list-style-type:none;    
@@ -321,7 +321,9 @@ form#new_comment {
  form#new_user input, #new-session input, form#new_comment select, form#new_comment textarea {
           width:90%;
 }
-
+#new-session input#remember_me{
+     width:5%;
+}
 .pagination{
      text-align: right;
      font-size:1.4em;
@@ -349,9 +351,7 @@ h4 {
      font-size:1.4em;
 }
 
-.display_comment{
-     padding-top:1em;
-     padding-bottom:1em;
+.display_comment{  
      background-color:#FFF;
      color:#000;
      /*include browser-specific prefixes for CSS3 element*/
@@ -370,7 +370,7 @@ h4 {
      width:10%;
      position:static;
      float:left;
-     margin:0.5em 5% 1em 1%; 
+     margin:0.5em 5% 0.5em 1%; 
 }
 
 .display_comment p:nth-of-type(1){
@@ -436,14 +436,6 @@ h4 {
      ul{
           line-height:2.5em;
      }
-/*
-     .display_comment img{
-          width:10%;
-     }
-     .display_comment p{
-          margin-left:20%;
-     }
-*/ 
 }
 
 @media screen and (max-width:480px){
