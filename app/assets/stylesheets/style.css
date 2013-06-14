@@ -322,6 +322,10 @@ form#new_comment {
           width:90%;
 }
 
+#new-session input#remember_me{
+     width:5%;
+}
+
 .pagination{
      text-align: right;
      font-size:1.4em;
