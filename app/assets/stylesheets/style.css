@@ -350,8 +350,6 @@ h4 {
 }
 
 .display_comment{
-     padding-top:1em;
-     padding-bottom:1em;
      background-color:#FFF;
      color:#000;
      /*include browser-specific prefixes for CSS3 element*/
@@ -370,7 +368,7 @@ h4 {
      width:10%;
      position:static;
      float:left;
-     margin:0.5em 5% 1em 1%; 
+     margin:0.5em 5% 0.5em 1%; 
 }
 
 .display_comment p:nth-of-type(1){
