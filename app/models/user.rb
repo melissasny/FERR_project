@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :first_name, :last_name, :user_name, :password, :password_confirmation
 
   attr_accessor :password
-  before_create { generate_token (:auth_token)}
+  before_create { generate_token(:auth_token) }
   before_validation { |user| user.email = email.downcase }
   before_validation { |user| user.user_name = user_name.downcase }
   before_save :encrypt_password
