@@ -5,11 +5,7 @@ class SessionsController < ApplicationController
   def create
     user = User.authenticate(params[:user_name].downcase, params[:password])
   	if user
-      if params[:remember_me]
-        cookies.permanent[:auth_token] = user.auth_token
-      else
-        cookies[:auth_token] = user.auth_token
-      end
+  		session[:user_id] = user.id 
   		redirect_to root_url
   	else
   		flash.now.alert = "Oops! Invalid user name or password"
@@ -18,7 +14,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    cookies.delete(:auth_token)
+    session[:user_id] = nil
     redirect_to root_url
   end
 

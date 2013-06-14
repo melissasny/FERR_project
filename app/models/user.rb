@@ -2,7 +2,6 @@ class User < ActiveRecord::Base
   attr_accessible :email, :first_name, :last_name, :user_name, :password, :password_confirmation
 
   attr_accessor :password
-  before_create {generate_token(:auth_token)}
   before_validation { |user| user.email = email.downcase }
   before_validation { |user| user.user_name = user_name.downcase }
   before_save :encrypt_password
@@ -32,12 +31,6 @@ class User < ActiveRecord::Base
   		self.password_salt = BCrypt::Engine.generate_salt
   		self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
   	end
-  end
-
-  def generate_token(column)
-    begin
-      self[column] = SecureRandom.urlsafe_base64
-    end while User.exists?(column => self[column])
   end
 
   has_many :comments
