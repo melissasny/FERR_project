@@ -59,6 +59,6 @@ module FERRProject
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.action_mailer.default_url_options = { :host => "http://www.pacific-springs-5481.herokuapp.com" }
+    #config.action_mailer.default_url_options = { :host => "http://www.pacific-springs-5481.herokuapp.com" }
   end
 end
