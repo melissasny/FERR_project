@@ -21,5 +21,6 @@ resources :users
 resources :sessions
 resources :comments
 resources :facilities
+resources :password_resets
   
 end
