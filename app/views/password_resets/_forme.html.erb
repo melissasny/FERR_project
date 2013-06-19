@@ -3,7 +3,8 @@
 		<h4>Form is invalid</h4>
 		<ul>
 			<% for message in @user.errors.full_messages %>
-			<li><%= message %></li>
+				<li><%= message %></li>
+			<% end %>
 		</ul>
 	<% end %>
 	<p>
