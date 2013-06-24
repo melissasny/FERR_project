@@ -99,7 +99,7 @@ Facility.create([
   { :name => "Bikram Yoga Union Square", :phone => "212.929.8926", :website => "http://www.bikramyogaunionsquare.com", :neighborhood_id => 4, :created_at => "2013-05-17 14:47:32", :updated_at => "2013-05-17 14:47:32" },
   { :name => "Dharma Mittra", :phone => "212.889.8160", :website => "http://www.dharmayogacenter.com", :neighborhood_id => 2, :created_at => "2013-05-17 14:48:46", :updated_at => "2013-05-17 14:48:46" },
   { :name => "Ishta Yoga", :phone => "212.888.9642", :website => "http://www.ishtayoga.com", :neighborhood_id => 13, :created_at => "2013-05-17 14:49:54", :updated_at => "2013-05-17 14:49:54" },
-  { :name => "The Iyengar Yoga Institute of New York", :phone => "212.691.9642", :website => "http://www.iyengarnyc.org", :neighborhood_id => 2, :created_at => "2013-05-17 14:51:16", :updated_at => "2013-05-17 14:51:16" },
+  { :name => "Iyengar Yoga Institute of New York", :phone => "212.691.9642", :website => "http://www.iyengarnyc.org", :neighborhood_id => 2, :created_at => "2013-05-17 14:51:16", :updated_at => "2013-05-17 14:51:16" },
   { :name => "Jivamukti", :phone => "212.929.8926", :website => "http://www.jivamuktiyoga.com", :neighborhood_id => 4, :created_at => "2013-05-17 14:52:34", :updated_at => "2013-05-17 14:52:34" },
   { :name => "Katonah Yoga", :phone => "212.255.2188", :website => "http://www.katonahyoga.com/home/", :neighborhood_id => 2, :created_at => "2013-05-17 14:53:44", :updated_at => "2013-05-17 14:53:44" },
   { :name => "Kula Yoga Project", :phone => "212.945.4460", :website => "http://www.kulayoga.com", :neighborhood_id => 12, :created_at => "2013-05-17 14:56:39", :updated_at => "2013-05-17 14:56:39" },
