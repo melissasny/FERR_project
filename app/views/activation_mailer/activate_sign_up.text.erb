@@ -1,0 +1,7 @@
+Hello <%= @user.first_name %>!
+
+Welcome to Fit in the City||NYC!  To complete your sign-up, please click the link below:
+
+<%= update_activations_url(@user.activation_token) %> 
+
+If you didn't create this sign-up or the sign-up was submitted in error, you don't have to do anything. The activation link will expire in 2 hours.
