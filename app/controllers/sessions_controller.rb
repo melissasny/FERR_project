@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       end
   		redirect_to root_url
   	else
-  		flash.now.alert = "Oops! Invalid user name or password"
+  		flash.now.alert = "Oops! Invalid user name or password, or user has not been activated."
   		render "new"
   	end
   end
