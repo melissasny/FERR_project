@@ -6,7 +6,7 @@ class ActivationMailer < ActionMailer::Base
   #
   #   en.user_mailer.password_reset.subject
   #
-  def password_reset(user)
+  def activate_sign_up(user)
     @user = user
     mail to: user.email, subject: "Activate Your Sign-up: Fit in the City || NYC"
   end
