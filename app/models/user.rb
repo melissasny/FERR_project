@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
     generate_token(:activation_token)
     self.activation_sent_at = Time.zone.now
     save!
-    UserMailer.activate_sign_up(self).deliver
+    ActivationMailer.activate_sign_up(self).deliver
   end
 
 
