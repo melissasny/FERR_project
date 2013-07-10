@@ -22,6 +22,5 @@ resources :sessions
 resources :comments
 resources :facilities
 resources :password_resets
-resources :activations, only: [:update]
   
 end

@@ -67,10 +67,10 @@ $(document).ready(function(){
 
 /* Apply to the views for new user, new session, new comments, and request password reset respectively */
 
-	$('input#user_first_name').focus();
 	$('input#user_name').focus();
 	$('textarea').focus();
 	$('input#email').focus(); 
 	$('input#user_password').focus();
+	$('input#user_first_name').focus();
 
 });

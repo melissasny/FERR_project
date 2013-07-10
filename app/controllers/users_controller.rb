@@ -6,10 +6,9 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
   	if @user.save
-      @user.send_activation 
-  		redirect_to log_in_path, :notice => "Please see email to complete your sign-up."
+      redirect_to log_in_path, :notice => "You are signed up! Please log in."
   	else
   		render "new"
   	end
-  end
+  end  
 end
