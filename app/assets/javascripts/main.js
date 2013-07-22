@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	$("ul li").attr("onclick","return true"); 
 
-	var grp1 = {title:'Make A Splash', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004d6e3b22526a73bd44&amp;ie=UTF8&amp;t=m&amp;ll=40.778722,-73.969574&amp;spn=0.129988,0.145912&amp;z=12&amp;output=embed"></iframe>'};
+	var grp1 = {title:'Make A Splash', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004d6e3b22526a73bd44&amp;ie=UTF8&amp;t=m&amp;ll=40.770142,-73.956528&amp;spn=0.136505,0.146255&amp;z=12&amp;output=embed"></iframe>'};
 	var grp2 = {title: 'Pedal to the Metal', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004d737dd42c1c37f807&amp;ie=UTF8&amp;t=m&amp;ll=40.749598,-73.982964&amp;spn=0.130045,0.145912&amp;z=12&amp;output=embed"></iframe>'};
 	var grp5 = {title: 'Find Your Bliss', code: '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004dceba5fbc153366aa&amp;ie=UTF8&amp;t=m&amp;ll=40.7587,-73.983307&amp;spn=0.130028,0.145912&amp;z=12&amp;output=embed"></iframe>'};
 	var grp6 = {title: 'Dance Your \#$% Off!', code: '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004e142e0d56128a647f&amp;ie=UTF8&amp;t=m&amp;ll=40.763381,-73.977814&amp;spn=0.130018,0.145912&amp;z=12&amp;output=embed"></iframe>'};
