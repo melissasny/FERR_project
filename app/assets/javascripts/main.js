@@ -8,7 +8,8 @@ $(document).ready(function(){
 
 	var grp1 = {title:'Make A Splash', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004d6e3b22526a73bd44&amp;ie=UTF8&amp;t=m&amp;ll=40.770142,-73.956528&amp;spn=0.136505,0.146255&amp;z=12&amp;output=embed"></iframe>'};
 	var grp2 = {title: 'Pedal to the Metal', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004d737dd42c1c37f807&amp;ie=UTF8&amp;t=m&amp;ll=40.749598,-73.982964&amp;spn=0.130045,0.145912&amp;z=12&amp;output=embed"></iframe>'};
-	var grp3 = {title: 'Ball Games', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004e247a610394d3c16c&amp;ie=UTF8&amp;t=m&amp;ll=40.762861,-73.9785&amp;spn=0.130019,0.145912&amp;z=12&amp;output=embed"></iframe>'};	
+	var grp3 = {title: 'Ball Games', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004e247a610394d3c16c&amp;ie=UTF8&amp;t=m&amp;ll=40.762861,-73.9785&amp;spn=0.130019,0.145912&amp;z=12&amp;output=embed"></iframe>'};
+	var grp4 = {title: 'Hit the Gym', code:'<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004e2602fffa33e156ce&amp;ie=UTF8&amp;t=m&amp;ll=40.770142,-73.952751&amp;spn=0.130005,0.145912&amp;z=12&amp;output=embed"></iframe>'};	
 	var grp5 = {title: 'Find Your Bliss', code: '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004dceba5fbc153366aa&amp;ie=UTF8&amp;t=m&amp;ll=40.7587,-73.983307&amp;spn=0.130028,0.145912&amp;z=12&amp;output=embed"></iframe>'};
 	var grp6 = {title: 'Dance Your \#$% Off!', code: '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004e142e0d56128a647f&amp;ie=UTF8&amp;t=m&amp;ll=40.763381,-73.977814&amp;spn=0.130018,0.145912&amp;z=12&amp;output=embed"></iframe>'};
 	var grp7 = {title: 'Swing a Racquet', code: '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=207352579320501097310.0004e23063e08ee94ea4f&amp;ie=UTF8&amp;t=m&amp;ll=40.793539,-73.967514&amp;spn=0.259919,0.291824&amp;z=11&amp;output=embed"></iframe>'};
@@ -23,6 +24,8 @@ $(document).ready(function(){
 			case "grp2": currAct = grp2;
 				break;
 			case "grp3": currAct = grp3;
+				break;
+			case "grp4": currAct = grp4;
 				break;
 			case "grp5": currAct = grp5;
 				break;
