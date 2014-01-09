@@ -21,13 +21,19 @@ Activity.create([
 
 
 
+Comment.create([
+  { :id => nil, :content => nil, :facility_id => nil, :user_id => nil, :created_at => nil, :updated_at => nil }
+], :without_protection => true )
+
+
+
 Facility.create([
-  { :id => 33, :name => "92nd Street Y", :phone => "212.415.5500", :website => "http://www.92y.org", :neighborhood_id => 13, :created_at => "2013-07-17 20:39:20", :updated_at => "2013-07-17 20:39:20" },
+  { :id => 33, :name => "92nd Street Y", :phone => "212.415.5500", :website => "http://www.92y.org/MayCenter/Classes-Programs/Aquatics.aspx", :neighborhood_id => 13, :created_at => "2013-07-17 20:39:20", :updated_at => "2013-11-14 17:01:27" },
   { :id => 75, :name => "Abrons Arts Center", :phone => "212.598.0400", :website => "http://www.abronsartscenter.org", :neighborhood_id => 16, :created_at => "2013-07-20 19:12:08", :updated_at => "2013-07-20 19:49:38" },
   { :id => 70, :name => "Alvin Ailey Extension", :phone => "212.405.9000", :website => "http://www.alvinailey.org", :neighborhood_id => 9, :created_at => "2013-07-20 19:03:34", :updated_at => "2013-07-20 19:48:35" },
   { :id => 91, :name => "American Tap Dance Foundation", :phone => "646.230.9564", :website => "http://www.atdf.org", :neighborhood_id => 7, :created_at => "2013-07-21 21:33:41", :updated_at => "2013-07-21 21:33:41" },
   { :id => 89, :name => "Arthur Murray", :phone => "212.593.1633", :website => "http://www.dancingclassesnyc.com", :neighborhood_id => 15, :created_at => "2013-07-21 21:30:20", :updated_at => "2013-07-21 21:30:20" },
-  { :id => 90, :name => "Arthur Murray", :phone => "212.473.2623", :website => "http://www.ballroomdancinglessonsnyc.com", :neighborhood_id => 9, :created_at => "2013-07-21 21:32:31", :updated_at => "2013-07-21 21:32:31" },
+  { :id => 90, :name => "Arthur Murray", :phone => "212.473.2623", :website => "http://www.arthurmurraymanhattan.com", :neighborhood_id => 9, :created_at => "2013-07-21 21:32:31", :updated_at => "2014-01-08 20:21:29" },
   { :id => 1, :name => "Asphalt Green", :phone => "212.369.8890", :website => "http://www.asphaltgreen.org", :neighborhood_id => 13, :created_at => "2013-07-17 19:47:28", :updated_at => "2013-07-17 19:58:01" },
   { :id => 2, :name => "Asser Levy Rec Center", :phone => "212.447.2020", :website => "http://www.nycgovparks.org/facilities/recreationcenters/M164", :neighborhood_id => 6, :created_at => "2013-07-17 19:49:23", :updated_at => "2013-07-17 19:49:23" },
   { :id => 162, :name => "Bally Total Fitness", :phone => "212.688.6630", :website => "http://www.ballyfitness.com/discover-bally/our-clubs/club-amenities-hours/club008-26.aspx", :neighborhood_id => 8, :created_at => "2013-07-27 17:20:37", :updated_at => "2013-07-27 17:20:37" },
@@ -37,6 +43,11 @@ Facility.create([
   { :id => 46, :name => "Bikram Yoga LES", :phone => "212.353.8859", :website => "http://www.bikramyogales.com", :neighborhood_id => 16, :created_at => "2013-07-17 20:55:11", :updated_at => "2013-07-17 20:56:58" },
   { :id => 47, :name => "Bikram Yoga NYC", :phone => "212.206.9400", :website => "http://www.bikramyoganyc.com", :neighborhood_id => 6, :created_at => "2013-07-17 20:56:15", :updated_at => "2013-07-17 20:56:15" },
   { :id => 48, :name => "Bikram Yoga Union Square", :phone => "212.929.8926", :website => "http://www.bikramyogaunionsquare.com", :neighborhood_id => 4, :created_at => "2013-07-17 20:58:07", :updated_at => "2013-07-17 20:58:07" },
+  { :id => 214, :name => "Blink Fitness 125th St", :phone => "646.253.9700", :website => "http://www.blinkfitness.com/locations/125th-street", :neighborhood_id => 14, :created_at => "2014-01-08 21:01:31", :updated_at => "2014-01-08 21:01:31" },
+  { :id => 216, :name => "Blink Fitness Chelsea", :phone => "646.560.4010", :website => "http://www.blinkfitness.com/locations/chelsea", :neighborhood_id => 2, :created_at => "2014-01-08 21:03:28", :updated_at => "2014-01-08 21:03:28" },
+  { :id => 213, :name => "Blink Fitness Murray Hill", :phone => "646.561.5400", :website => "http://www.blinkfitness.com/locations/murray-hill", :neighborhood_id => 8, :created_at => "2014-01-08 21:00:02", :updated_at => "2014-01-08 21:00:02" },
+  { :id => 212, :name => "Blink Fitness Noho", :phone => "212.228.7000", :website => "http://www.blinkfitness.com/locations/noho", :neighborhood_id => 10, :created_at => "2014-01-08 20:58:38", :updated_at => "2014-01-08 20:58:38" },
+  { :id => 215, :name => "Blink Fitness Penn Plaza", :phone => "646.795.2795", :website => "http://www.blinkfitness.com/locations/penn-plaza", :neighborhood_id => 9, :created_at => "2014-01-08 21:02:31", :updated_at => "2014-01-08 21:02:31" },
   { :id => 74, :name => "Broadway Dance Center", :phone => "212.582.9304", :website => "http://www.broadwaydancecenter.com", :neighborhood_id => 9, :created_at => "2013-07-20 19:10:57", :updated_at => "2013-07-20 19:10:57" },
   { :id => 138, :name => "Central Park Croquet & Lawn Bowling", :phone => "212.360.8133", :website => "http://www.centralparknyc.org/visit/things-to-do/sports/lawn-bowling-croquet.html", :neighborhood_id => 15, :created_at => "2013-07-23 20:40:56", :updated_at => "2013-07-23 20:48:33" },
   { :id => 117, :name => "Central Park Tennis Courts", :phone => "212.280.0205", :website => "http://www.nycgovparks.org/parks/centralpark/facilities/tennis", :neighborhood_id => 15, :created_at => "2013-07-22 21:13:08", :updated_at => "2013-07-22 21:13:08" },
@@ -45,10 +56,8 @@ Facility.create([
   { :id => 3, :name => "Chelsea Piers - The Sports Center", :phone => "212.336.6000", :website => "http://www.chelseapiers.com/sc/", :neighborhood_id => 2, :created_at => "2013-07-17 20:07:39", :updated_at => "2013-07-17 20:07:39" },
   { :id => 110, :name => "Chelsea Recreation Center", :phone => "212.255.3705", :website => "http://www.nycgovparks.org/parks/chelsearecreationcenter", :neighborhood_id => 2, :created_at => "2013-07-21 23:09:56", :updated_at => "2013-07-21 23:09:56" },
   { :id => 4, :name => "Chinatown YMCA", :phone => "212.912.2460", :website => "http://www.ymcanyc.org/chinatown", :neighborhood_id => 3, :created_at => "2013-07-17 20:08:58", :updated_at => "2013-07-17 20:08:58" },
-  { :id => 5, :name => "Community Center at Stuyvesant H.S.", :phone => "212.912.2460", :website => "http://www.communitycenteratstuyvesanthighschool.org", :neighborhood_id => 1, :created_at => "2013-07-17 20:10:21", :updated_at => "2013-07-17 20:10:21" },
   { :id => 145, :name => "CrossFit NYC", :phone => "212.684.2018", :website => "http://www.crossfitnyc.com", :neighborhood_id => 2, :created_at => "2013-07-25 18:48:01", :updated_at => "2013-07-25 18:48:01" },
   { :id => 151, :name => "Crunch", :phone => "212.227.0005", :website => "http://www.crunch.com/locations/new-york/new-york/90-john-street", :neighborhood_id => 5, :created_at => "2013-07-25 19:21:20", :updated_at => "2013-07-25 19:21:20" },
-  { :id => 152, :name => "Crunch", :phone => "212.370.0998", :website => "http://www.crunch.com/locations/new-york/new-york/chelsea", :neighborhood_id => 2, :created_at => "2013-07-25 19:23:21", :updated_at => "2013-07-25 19:23:21" },
   { :id => 153, :name => "Crunch", :phone => "212.366.3725", :website => "http://www.crunch.com/locations/new-york/new-york/christopher-street", :neighborhood_id => 7, :created_at => "2013-07-25 19:24:14", :updated_at => "2013-07-25 19:24:14" },
   { :id => 156, :name => "Crunch", :phone => "212.614.0120", :website => "http://www.crunch.com/locations/new-york/new-york/lafayette", :neighborhood_id => 10, :created_at => "2013-07-25 19:27:29", :updated_at => "2013-07-25 19:27:29" },
   { :id => 157, :name => "Crunch", :phone => "212.533.0001", :website => "http://www.crunch.com/locations/new-york/new-york/union-square", :neighborhood_id => 4, :created_at => "2013-07-25 19:28:15", :updated_at => "2013-07-25 19:28:15" },
@@ -59,11 +68,11 @@ Facility.create([
   { :id => 159, :name => "Crunch W54th", :phone => "212.307.7760", :website => "http://www.crunch.com/locations/new-york/new-york/54th-street", :neighborhood_id => 9, :created_at => "2013-07-25 19:29:36", :updated_at => "2013-07-25 19:44:20" },
   { :id => 80, :name => "Dance Manhattan", :phone => "212.807.0802", :website => "http://www.dancemanhattan.com", :neighborhood_id => 2, :created_at => "2013-07-20 19:20:12", :updated_at => "2013-07-20 19:20:12" },
   { :id => 73, :name => "Dance New Amsterdam", :phone => "212.625.8369", :website => "http://www.dnadance.org", :neighborhood_id => 5, :created_at => "2013-07-20 19:09:42", :updated_at => "2013-07-20 19:09:42" },
-  { :id => 76, :name => "Dance With Me", :phone => "212.840.3262", :website => "http://www.dancewithmeusa.com/wordpress/team_members/soho-team/", :neighborhood_id => 11, :created_at => "2013-07-20 19:13:57", :updated_at => "2013-07-20 19:13:57" },
-  { :id => 6, :name => "David Barton Gym Astor Pl.", :phone => "212.505.6800", :website => "http://www.davidbartongym.com/dbgyms/New_York_Astor_Place.php", :neighborhood_id => 4, :created_at => "2013-07-17 20:12:00", :updated_at => "2013-07-17 20:14:10" },
-  { :id => 142, :name => "David Barton Gym Christopher St.", :phone => "212.333.4675", :website => "http://www.davidbartongym.com", :neighborhood_id => 7, :created_at => "2013-07-25 18:45:11", :updated_at => "2013-07-25 18:45:11" },
-  { :id => 141, :name => "David Barton Gym UES", :phone => "212.517.7577", :website => "http://www.davidbartongym.com/dbgyms/New_York_Uptown.php", :neighborhood_id => 13, :created_at => "2013-07-25 18:44:05", :updated_at => "2013-07-25 18:44:05" },
-  { :id => 7, :name => "David Barton Gym W23rd", :phone => "212.414.2022", :website => "http://www.davidbartongym.com/dbgyms/New_York_Chelsea.php", :neighborhood_id => 2, :created_at => "2013-07-17 20:13:15", :updated_at => "2013-07-17 20:13:15" },
+  { :id => 76, :name => "Dance With Me", :phone => "212.840.3262", :website => "http://dance.dancewithmeusa.com/dwmtemporarywebsite", :neighborhood_id => 11, :created_at => "2013-07-20 19:13:57", :updated_at => "2014-01-08 20:22:28" },
+  { :id => 6, :name => "David Barton Gym Astor Pl.", :phone => "212.505.6800", :website => "http://www.davidbartongym.com/dbgyms/New_York_Astor_Place/", :neighborhood_id => 4, :created_at => "2013-07-17 20:12:00", :updated_at => "2014-01-08 17:45:23" },
+  { :id => 142, :name => "David Barton Gym Christopher St.", :phone => "212.333.4675", :website => "http://www.davidbartongym.com/dbgyms/christopherstreet/", :neighborhood_id => 7, :created_at => "2013-07-25 18:45:11", :updated_at => "2014-01-08 17:47:40" },
+  { :id => 141, :name => "David Barton Gym UES", :phone => "212.517.7577", :website => "http://www.davidbartongym.com/dbgyms/New_York_Uptown/", :neighborhood_id => 13, :created_at => "2013-07-25 18:44:05", :updated_at => "2014-01-08 17:50:44" },
+  { :id => 7, :name => "David Barton Gym W23rd", :phone => "212.414.2022", :website => "http://davidbartongym.com/dbgyms/New_York_Chelsea/", :neighborhood_id => 2, :created_at => "2013-07-17 20:13:15", :updated_at => "2014-01-08 17:46:15" },
   { :id => 49, :name => "Dharma Mittra", :phone => "212.889.8160", :website => "http://www.dharmayogacenter.com", :neighborhood_id => 2, :created_at => "2013-07-17 20:59:37", :updated_at => "2013-07-17 20:59:37" },
   { :id => 206, :name => "Downtown Boathouse", :phone => "none", :website => "http://www.downtownboathouse.org", :neighborhood_id => 11, :created_at => "2013-08-09 17:44:58", :updated_at => "2013-08-09 17:45:52" },
   { :id => 115, :name => "East River Park Tennis Courts", :phone => "212.529.7185", :website => "http://www.nycgovparks.org/parks/eastriverpark/facilities/tennis", :neighborhood_id => 16, :created_at => "2013-07-22 21:10:40", :updated_at => "2013-07-22 21:10:40" },
@@ -76,11 +85,11 @@ Facility.create([
   { :id => 13, :name => "Equinox E63", :phone => "212.750.4900", :website => "http://www.equinox.com/clubs/63rd", :neighborhood_id => 13, :created_at => "2013-07-17 20:20:33", :updated_at => "2013-07-17 20:20:33" },
   { :id => 14, :name => "Equinox E74", :phone => "212.249.3917", :website => "http://www.equinox.com/clubs/74th", :neighborhood_id => 13, :created_at => "2013-07-17 20:21:20", :updated_at => "2013-07-17 20:21:20" },
   { :id => 15, :name => "Equinox E85", :phone => "212.439.8500", :website => "http://www.equinox.com/clubs/85th", :neighborhood_id => 13, :created_at => "2013-07-17 20:21:56", :updated_at => "2013-07-17 20:21:56" },
-  { :id => 16, :name => "Equinox Murray St.", :phone => "212.566.6555", :website => "http://www.equinox.com/clubs/tribeca", :neighborhood_id => 12, :created_at => "2013-07-17 20:22:49", :updated_at => "2013-07-17 20:22:49" },
   { :id => 17, :name => "Equinox Park Avenue", :phone => "212.779.1727", :website => "http://www.equinox.com/clubs/park", :neighborhood_id => 8, :created_at => "2013-07-17 20:23:36", :updated_at => "2013-07-17 20:23:36" },
-  { :id => 18, :name => "Equinox Prince St.", :phone => "212.334.4631", :website => "http://www.equinox.com/clubs/soho", :neighborhood_id => 11, :created_at => "2013-07-17 20:24:24", :updated_at => "2013-07-17 20:24:24" },
   { :id => 19, :name => "Equinox Printing House", :phone => "212.243.7600", :website => "http://www.equinox.com/clubs/printinghouse", :neighborhood_id => 7, :created_at => "2013-07-17 20:25:12", :updated_at => "2013-07-17 20:25:12" },
   { :id => 20, :name => "Equinox Rockefeller Center", :phone => "212.218.8600", :website => "http://www.equinox.com/clubs/rockefeller", :neighborhood_id => 9, :created_at => "2013-07-17 20:26:04", :updated_at => "2013-08-07 20:48:59" },
+  { :id => 18, :name => "Equinox Soho", :phone => "212.334.4631", :website => "http://www.equinox.com/clubs/soho", :neighborhood_id => 11, :created_at => "2013-07-17 20:24:24", :updated_at => "2013-11-14 17:08:02" },
+  { :id => 16, :name => "Equinox Tribeca", :phone => "212.566.6555", :website => "http://www.equinox.com/clubs/tribeca", :neighborhood_id => 12, :created_at => "2013-07-17 20:22:49", :updated_at => "2013-11-14 17:08:38" },
   { :id => 21, :name => "Equinox Village", :phone => "212.620.0103", :website => "http://www.equinox.com/clubs/greenwich", :neighborhood_id => 7, :created_at => "2013-07-17 20:27:01", :updated_at => "2013-07-17 20:27:01" },
   { :id => 23, :name => "Equinox W17", :phone => "212.367.0863", :website => "http://www.equinox.com/clubs/17th", :neighborhood_id => 2, :created_at => "2013-07-17 20:28:31", :updated_at => "2013-07-17 20:28:31" },
   { :id => 24, :name => "Equinox W50", :phone => "212.541.7000", :website => "http://www.equinox.com/clubs/50th", :neighborhood_id => 9, :created_at => "2013-07-17 20:29:11", :updated_at => "2013-07-17 20:29:11" },
@@ -104,13 +113,14 @@ Facility.create([
   { :id => 50, :name => "Ishta Yoga", :phone => "212.888.9642", :website => "http://www.ishtayoga.com", :neighborhood_id => 13, :created_at => "2013-07-17 21:00:36", :updated_at => "2013-07-17 21:00:36" },
   { :id => 51, :name => "Iyengar Yoga Institute of New York", :phone => "212.691.9642", :website => "http://www.iyengarnyc.org", :neighborhood_id => 2, :created_at => "2013-07-17 21:01:56", :updated_at => "2013-07-17 21:01:56" },
   { :id => 30, :name => "JCC", :phone => "646.505.4444", :website => "http://www.jccmanhattan.org", :neighborhood_id => 15, :created_at => "2013-07-17 20:35:56", :updated_at => "2013-07-17 20:35:56" },
+  { :id => 101, :name => "Jeni Breen Tango Academy", :phone => "347.510.8842", :website => "http://www.jenibreentangoacademy.com", :neighborhood_id => 7, :created_at => "2013-07-21 21:45:27", :updated_at => "2013-11-14 20:24:22" },
   { :id => 52, :name => "Jivamukti", :phone => "212.929.8926", :website => "http://www.jivamuktiyoga.com", :neighborhood_id => 4, :created_at => "2013-07-17 21:03:10", :updated_at => "2013-07-17 21:03:10" },
-  { :id => 78, :name => "Joffrey Ballet School", :phone => "972.943.4786", :website => "http://www.joffreyballetschool.com/adult-and-open-classes-overview.html", :neighborhood_id => 7, :created_at => "2013-07-20 19:16:50", :updated_at => "2013-07-20 19:16:50" },
+  { :id => 78, :name => "Joffrey Ballet School", :phone => "972.943.4786", :website => "http://www.joffreyballetschool.com/adult-program.html", :neighborhood_id => 7, :created_at => "2013-07-20 19:16:50", :updated_at => "2013-11-14 17:10:28" },
   { :id => 53, :name => "Katonah Yoga", :phone => "212.255.2188", :website => "http://www.katonahyoga.com/home/", :neighborhood_id => 2, :created_at => "2013-07-17 21:41:25", :updated_at => "2013-07-17 21:41:25" },
   { :id => 54, :name => "Kula Yoga Project", :phone => "212.945.4460", :website => "http://www.kulayoga.com", :neighborhood_id => 12, :created_at => "2013-07-17 21:42:23", :updated_at => "2013-07-17 21:42:23" },
   { :id => 55, :name => "Laughing Lotus", :phone => "212.414.2903", :website => "http://www.nyc.laughinglotus.com", :neighborhood_id => 2, :created_at => "2013-07-17 21:43:51", :updated_at => "2013-07-17 21:43:51" },
   { :id => 56, :name => "Life In Motion", :phone => "212.666.0870", :website => "http://www.lifeinmotion.com", :neighborhood_id => 15, :created_at => "2013-07-17 21:44:39", :updated_at => "2013-07-17 21:44:39" },
-  { :id => 103, :name => "Lorenz Latin Dance Studio", :phone => "646.590.3642", :website => "http://www.lorenzdancestudio.com/index.html", :neighborhood_id => 13, :created_at => "2013-07-21 21:47:38", :updated_at => "2013-07-21 21:47:38" },
+  { :id => 103, :name => "Lorenz Latin Dance Studio", :phone => "646.590.3642", :website => "http://www.lorenzdancestudio.com", :neighborhood_id => 13, :created_at => "2013-07-21 21:47:38", :updated_at => "2013-11-14 17:11:42" },
   { :id => 165, :name => "Lucille Roberts", :phone => "212.267.3730", :website => "http://www.lucilleroberts.com/womens-gym-Wall-Street", :neighborhood_id => 5, :created_at => "2013-08-07 23:23:59", :updated_at => "2013-08-07 23:23:59" },
   { :id => 166, :name => "Lucille Roberts", :phone => "212.682.8421", :website => "http://www.lucilleroberts.com/womens-gym-42nd-Street", :neighborhood_id => 8, :created_at => "2013-08-07 23:24:52", :updated_at => "2013-08-07 23:24:52" },
   { :id => 167, :name => "Lucille Roberts", :phone => "212.255.3999", :website => "http://www.lucilleroberts.com/womens-gym-5th-Avenue-and-14th-Street", :neighborhood_id => 7, :created_at => "2013-08-07 23:26:14", :updated_at => "2013-08-07 23:26:14" },
@@ -190,9 +200,7 @@ Facility.create([
   { :id => 34, :name => "Reebok Club", :phone => "212.362.6800", :website => "http://www.reeboksportsclubny.com", :neighborhood_id => 15, :created_at => "2013-07-17 20:40:16", :updated_at => "2013-07-17 20:40:16" },
   { :id => 35, :name => "Riverbank State Park", :phone => "212.694.3600", :website => "http://www.nysparks.com/parks/93/details.aspx", :neighborhood_id => 14, :created_at => "2013-07-17 20:41:23", :updated_at => "2013-07-17 20:41:23" },
   { :id => 120, :name => "Riverside Park", :phone => "212.978.0277", :website => "http://www.rcta.info", :neighborhood_id => 15, :created_at => "2013-07-22 21:17:26", :updated_at => "2013-07-22 21:17:26" },
-  { :id => 131, :name => "Roosevelt Island Octagon Park", :phone => "none", :website => "http://www.rioc.com/tenniscourts.htm", :neighborhood_id => 18, :created_at => "2013-07-22 21:35:36", :updated_at => "2013-07-22 21:54:38" },
   { :id => 128, :name => "Roosevelt Island Racquet Club", :phone => "212.935.0250", :website => "http://www.rirctennis.com", :neighborhood_id => 18, :created_at => "2013-07-22 21:28:03", :updated_at => "2013-07-22 21:28:03" },
-  { :id => 101, :name => "Sandra Cameron Dance Center", :phone => "212.431.1825", :website => "http://www.sandracameron.com", :neighborhood_id => 7, :created_at => "2013-07-21 21:45:27", :updated_at => "2013-07-21 21:45:27" },
   { :id => 144, :name => "Setai Club & Spa", :phone => "212.792.6193", :website => "http://www.setaiclubnewyork.com", :neighborhood_id => 5, :created_at => "2013-07-25 18:47:09", :updated_at => "2013-07-25 18:47:09" },
   { :id => 81, :name => "Shockra Dance Studio", :phone => "212.696.9642", :website => "http://www.shockrastudio.com", :neighborhood_id => 6, :created_at => "2013-07-20 19:21:28", :updated_at => "2013-07-20 19:21:28" },
   { :id => 93, :name => "Solstice Studio", :phone => "917.922.9081", :website => "http://www.boldbellydance.com", :neighborhood_id => 9, :created_at => "2013-07-21 21:35:42", :updated_at => "2013-07-21 21:35:42" },
@@ -201,22 +209,24 @@ Facility.create([
   { :id => 37, :name => "Soul Cycle E63", :phone => "212.996.1300", :website => "http://www.soul-cycle.com/soul-east/soul-east-63.cfm", :neighborhood_id => 13, :created_at => "2013-07-17 20:43:58", :updated_at => "2013-07-17 20:43:58" },
   { :id => 38, :name => "Soul Cycle E83", :phone => "212.639.1300", :website => "http://www.soul-cycle.com/soul-east/soul-east-83.cfm", :neighborhood_id => 13, :created_at => "2013-07-17 20:44:38", :updated_at => "2013-07-17 20:44:38" },
   { :id => 39, :name => "Soul Cycle Lafayette", :phone => "212.860.1300", :website => "http://www.soul-cycle.com/soul-east/soul-noho.cfm", :neighborhood_id => 10, :created_at => "2013-07-17 20:45:31", :updated_at => "2013-07-17 20:45:31" },
-  { :id => 40, :name => "Soul Cycle Soho", :phone => "Opening 2013", :website => "http://www.soul-cycle.com", :neighborhood_id => 11, :created_at => "2013-07-17 20:46:33", :updated_at => "2013-07-17 20:46:33" },
+  { :id => 40, :name => "Soul Cycle Soho", :phone => "212.987.7685", :website => "http://www.soul-cycle.com/soul-east/soul-soho.cfm", :neighborhood_id => 11, :created_at => "2013-07-17 20:46:33", :updated_at => "2013-11-14 17:05:45" },
   { :id => 41, :name => "Soul Cycle Tribeca", :phone => "212.406.1300", :website => "http://www.soul-cycle.com/soul-east/soul-tribeca.cfm", :neighborhood_id => 12, :created_at => "2013-07-17 20:47:43", :updated_at => "2013-07-17 20:47:43" },
-  { :id => 42, :name => "Soul Cycle Village", :phone => "212.996.7685", :website => "http://www.soul-cycle.com/soul-east/soul-west-village.cfm", :neighborhood_id => 7, :created_at => "2013-07-17 20:48:45", :updated_at => "2013-07-17 20:48:45" },
   { :id => 43, :name => "Soul Cycle W77", :phone => "212.787.1300", :website => "http://www.soul-cycle.com/soul-east/soul-west-77.cfm", :neighborhood_id => 15, :created_at => "2013-07-17 20:49:39", :updated_at => "2013-07-17 20:49:39" },
+  { :id => 42, :name => "Soul Cycle West Village", :phone => "212.996.7685", :website => "http://www.soul-cycle.com/soul-east/soul-west-village.cfm", :neighborhood_id => 7, :created_at => "2013-07-17 20:48:45", :updated_at => "2013-11-14 17:07:20" },
   { :id => 127, :name => "Sportime at Randall's Island", :phone => "212.427.6150", :website => "http://www.sportimeny.com/Manhattan", :neighborhood_id => 17, :created_at => "2013-07-22 21:26:44", :updated_at => "2013-07-22 21:26:44" },
   { :id => 133, :name => "SportsClub/LA", :phone => "212.355.5100", :website => "http://nycues.sportsclubla.com", :neighborhood_id => 13, :created_at => "2013-07-23 20:11:55", :updated_at => "2013-07-23 20:11:55" },
   { :id => 108, :name => "Sportspark", :phone => "212.832.4514", :website => "http://www.rioc.ny.gov/Sportspark.htm", :neighborhood_id => 18, :created_at => "2013-07-21 23:07:08", :updated_at => "2013-07-21 23:07:08" },
   { :id => 98, :name => "Stepping Out Studios", :phone => "646.742.9400", :website => "http://www.steppingoutstudios.com", :neighborhood_id => 2, :created_at => "2013-07-21 21:40:35", :updated_at => "2013-07-21 21:40:35" },
   { :id => 71, :name => "Steps on Broadway", :phone => "212.874.2410", :website => "http://www.stepsnyc.com", :neighborhood_id => 15, :created_at => "2013-07-20 19:05:46", :updated_at => "2013-07-20 19:05:46" },
   { :id => 99, :name => "Strictly Tango NYC", :phone => "917.373.7446", :website => "http://www.learnargentinetango.com", :neighborhood_id => 9, :created_at => "2013-07-21 21:41:35", :updated_at => "2013-07-21 21:41:35" },
+  { :id => 152, :name => "Studio Q'dance", :phone => "212.253.5314", :website => "http://www.studioqdance.com", :neighborhood_id => 7, :created_at => "2013-07-25 19:23:21", :updated_at => "2013-11-14 20:40:53" },
   { :id => 122, :name => "Sutton East Tennis Club", :phone => "212.751.3452", :website => "http://www.suttoneasttennis.com", :neighborhood_id => 13, :created_at => "2013-07-22 21:20:03", :updated_at => "2013-07-22 21:20:03" },
+  { :id => 5, :name => "Swing and Samba", :phone => "917.439.3493", :website => "http://www.swingandsamba.com", :neighborhood_id => 7, :created_at => "2013-07-17 20:10:21", :updated_at => "2013-11-14 20:27:43" },
   { :id => 137, :name => "The Baseball Center NYC", :phone => "212.362.0344", :website => "http://www.thebaseballcenter.com", :neighborhood_id => 15, :created_at => "2013-07-23 20:26:33", :updated_at => "2013-07-23 20:26:33" },
   { :id => 60, :name => "The Shala", :phone => "212.979.9988", :website => "http://www.theshala.com", :neighborhood_id => 4, :created_at => "2013-07-17 21:48:23", :updated_at => "2013-07-17 21:48:23" },
   { :id => 94, :name => "The Tango Company", :phone => "646.242.5683", :website => "http://www.tangoclassesnyc.com", :neighborhood_id => 9, :created_at => "2013-07-21 21:36:31", :updated_at => "2013-07-21 21:36:31" },
   { :id => 62, :name => "Three Jewels", :phone => "212.475.6650", :website => "http://www.threejewels.org", :neighborhood_id => 4, :created_at => "2013-07-17 21:49:55", :updated_at => "2013-07-17 21:49:55" },
-  { :id => 104, :name => "Tony Dapolito Recreation Center", :phone => "212.242.5228", :website => "http://www.nycgovparks.org/sub_things_to_do/recreation_centers/view_recreation_center.php?ID=M103", :neighborhood_id => 7, :created_at => "2013-07-21 23:01:03", :updated_at => "2013-07-21 23:01:03" },
+  { :id => 104, :name => "Tony Dapolito Recreation Center", :phone => "212.242.5228", :website => "http://www.nycgovparks.org/facilities/recreationcenters/M103", :neighborhood_id => 7, :created_at => "2013-07-21 23:01:03", :updated_at => "2013-11-14 17:03:48" },
   { :id => 125, :name => "Town Tennis Club", :phone => "212.752.4059", :website => "https://plus.google.com/103829524599501021425/about?gl=us&hl=en", :neighborhood_id => 8, :created_at => "2013-07-22 21:24:13", :updated_at => "2013-07-22 21:57:48" },
   { :id => 97, :name => "TriANGulO", :phone => "212.633.6445", :website => "http://www.tangonyc.com", :neighborhood_id => 2, :created_at => "2013-07-21 21:39:38", :updated_at => "2013-07-21 21:39:38" },
   { :id => 126, :name => "Vanderbilt Tennis Club", :phone => "212.599.6500", :website => "http://www.vanderbilttennisclub.com", :neighborhood_id => 8, :created_at => "2013-07-22 21:25:03", :updated_at => "2013-07-22 21:25:03" },
@@ -242,7 +252,7 @@ FacilityActivity.create([
   { :id => 2, :facility_id => 2, :activity_id => 1, :created_at => "2013-07-19 20:06:31", :updated_at => "2013-07-19 20:06:31" },
   { :id => 3, :facility_id => 3, :activity_id => 1, :created_at => "2013-07-19 20:06:40", :updated_at => "2013-07-19 20:06:40" },
   { :id => 4, :facility_id => 4, :activity_id => 1, :created_at => "2013-07-19 20:06:49", :updated_at => "2013-07-19 20:06:49" },
-  { :id => 5, :facility_id => 5, :activity_id => 1, :created_at => "2013-07-19 20:06:57", :updated_at => "2013-07-19 20:06:57" },
+  { :id => 5, :facility_id => 5, :activity_id => 4, :created_at => "2013-07-19 20:06:57", :updated_at => "2013-11-14 20:31:02" },
   { :id => 6, :facility_id => 6, :activity_id => 3, :created_at => "2013-07-19 20:07:16", :updated_at => "2013-07-19 20:07:16" },
   { :id => 7, :facility_id => 7, :activity_id => 3, :created_at => "2013-07-19 20:07:38", :updated_at => "2013-07-19 20:07:38" },
   { :id => 8, :facility_id => 8, :activity_id => 3, :created_at => "2013-07-19 20:07:47", :updated_at => "2013-07-19 20:07:47" },
@@ -372,7 +382,6 @@ FacilityActivity.create([
   { :id => 132, :facility_id => 128, :activity_id => 5, :created_at => "2013-07-22 21:40:21", :updated_at => "2013-07-22 21:40:21" },
   { :id => 133, :facility_id => 129, :activity_id => 5, :created_at => "2013-07-22 21:40:25", :updated_at => "2013-07-22 21:40:25" },
   { :id => 134, :facility_id => 130, :activity_id => 5, :created_at => "2013-07-22 21:40:29", :updated_at => "2013-07-22 21:40:29" },
-  { :id => 135, :facility_id => 131, :activity_id => 5, :created_at => "2013-07-22 21:40:40", :updated_at => "2013-07-22 21:40:40" },
   { :id => 136, :facility_id => 132, :activity_id => 5, :created_at => "2013-07-22 21:40:43", :updated_at => "2013-07-22 21:40:43" },
   { :id => 137, :facility_id => 134, :activity_id => 7, :created_at => "2013-07-23 20:19:03", :updated_at => "2013-07-23 20:19:03" },
   { :id => 138, :facility_id => 133, :activity_id => 7, :created_at => "2013-07-23 20:19:11", :updated_at => "2013-07-23 20:19:11" },
@@ -385,7 +394,6 @@ FacilityActivity.create([
   { :id => 145, :facility_id => 45, :activity_id => 7, :created_at => "2013-07-23 20:20:04", :updated_at => "2013-07-23 20:20:04" },
   { :id => 146, :facility_id => 104, :activity_id => 7, :created_at => "2013-07-23 20:20:10", :updated_at => "2013-07-23 20:20:10" },
   { :id => 147, :facility_id => 44, :activity_id => 7, :created_at => "2013-07-23 20:20:18", :updated_at => "2013-07-23 20:20:18" },
-  { :id => 148, :facility_id => 5, :activity_id => 7, :created_at => "2013-07-23 20:20:23", :updated_at => "2013-07-23 20:20:23" },
   { :id => 149, :facility_id => 108, :activity_id => 7, :created_at => "2013-07-23 20:20:29", :updated_at => "2013-07-23 20:20:29" },
   { :id => 150, :facility_id => 109, :activity_id => 7, :created_at => "2013-07-23 20:20:35", :updated_at => "2013-07-23 20:20:35" },
   { :id => 151, :facility_id => 110, :activity_id => 7, :created_at => "2013-07-23 20:20:42", :updated_at => "2013-07-23 20:20:42" },
@@ -454,7 +462,7 @@ FacilityActivity.create([
   { :id => 214, :facility_id => 149, :activity_id => 6, :created_at => "2013-07-25 19:31:04", :updated_at => "2013-07-25 19:31:04" },
   { :id => 215, :facility_id => 150, :activity_id => 6, :created_at => "2013-07-25 19:31:08", :updated_at => "2013-07-25 19:31:08" },
   { :id => 216, :facility_id => 151, :activity_id => 6, :created_at => "2013-07-25 19:31:11", :updated_at => "2013-07-25 19:31:11" },
-  { :id => 217, :facility_id => 152, :activity_id => 6, :created_at => "2013-07-25 19:31:15", :updated_at => "2013-07-25 19:31:15" },
+  { :id => 217, :facility_id => 152, :activity_id => 4, :created_at => "2013-07-25 19:31:15", :updated_at => "2013-11-14 20:41:38" },
   { :id => 218, :facility_id => 153, :activity_id => 6, :created_at => "2013-07-25 19:31:17", :updated_at => "2013-07-25 19:31:17" },
   { :id => 219, :facility_id => 154, :activity_id => 6, :created_at => "2013-07-25 19:31:21", :updated_at => "2013-07-25 19:31:21" },
   { :id => 220, :facility_id => 155, :activity_id => 6, :created_at => "2013-07-25 19:31:24", :updated_at => "2013-07-25 19:31:24" },
@@ -532,7 +540,12 @@ FacilityActivity.create([
   { :id => 292, :facility_id => 208, :activity_id => 13, :created_at => "2013-08-09 17:57:18", :updated_at => "2013-08-09 17:57:18" },
   { :id => 293, :facility_id => 209, :activity_id => 14, :created_at => "2013-08-09 17:57:32", :updated_at => "2013-08-09 17:57:32" },
   { :id => 294, :facility_id => 210, :activity_id => 14, :created_at => "2013-08-09 17:57:36", :updated_at => "2013-08-09 17:57:36" },
-  { :id => 295, :facility_id => 211, :activity_id => 14, :created_at => "2013-08-09 17:57:39", :updated_at => "2013-08-09 17:57:39" }
+  { :id => 295, :facility_id => 211, :activity_id => 14, :created_at => "2013-08-09 17:57:39", :updated_at => "2013-08-09 17:57:39" },
+  { :id => 296, :facility_id => 212, :activity_id => 6, :created_at => "2014-01-08 21:04:53", :updated_at => "2014-01-08 21:04:53" },
+  { :id => 297, :facility_id => 213, :activity_id => 6, :created_at => "2014-01-08 21:05:03", :updated_at => "2014-01-08 21:05:03" },
+  { :id => 298, :facility_id => 214, :activity_id => 6, :created_at => "2014-01-08 21:05:07", :updated_at => "2014-01-08 21:05:07" },
+  { :id => 299, :facility_id => 215, :activity_id => 6, :created_at => "2014-01-08 21:05:10", :updated_at => "2014-01-08 21:05:10" },
+  { :id => 300, :facility_id => 216, :activity_id => 6, :created_at => "2014-01-08 21:05:13", :updated_at => "2014-01-08 21:05:13" }
 ], :without_protection => true )
 
 
@@ -573,7 +586,6 @@ Neighborhood.create([
 
 
 NeighborhoodActivity.create([
-  { :id => 1, :neighborhood_id => 1, :activity_id => 1, :created_at => "2013-07-19 19:58:24", :updated_at => "2013-07-19 19:58:24" },
   { :id => 2, :neighborhood_id => 2, :activity_id => 1, :created_at => "2013-07-19 19:58:42", :updated_at => "2013-07-19 19:58:42" },
   { :id => 3, :neighborhood_id => 2, :activity_id => 2, :created_at => "2013-07-19 19:58:49", :updated_at => "2013-07-19 19:58:49" },
   { :id => 4, :neighborhood_id => 2, :activity_id => 3, :created_at => "2013-07-19 19:58:55", :updated_at => "2013-07-19 19:58:55" },
@@ -628,7 +640,6 @@ NeighborhoodActivity.create([
   { :id => 53, :neighborhood_id => 16, :activity_id => 5, :created_at => "2013-07-22 21:44:35", :updated_at => "2013-07-22 21:44:35" },
   { :id => 54, :neighborhood_id => 17, :activity_id => 5, :created_at => "2013-07-22 21:44:39", :updated_at => "2013-07-22 21:44:39" },
   { :id => 55, :neighborhood_id => 18, :activity_id => 5, :created_at => "2013-07-22 21:44:44", :updated_at => "2013-07-22 21:44:44" },
-  { :id => 56, :neighborhood_id => 1, :activity_id => 7, :created_at => "2013-07-23 19:57:56", :updated_at => "2013-07-23 19:57:56" },
   { :id => 57, :neighborhood_id => 2, :activity_id => 7, :created_at => "2013-07-23 19:58:07", :updated_at => "2013-07-23 19:58:07" },
   { :id => 58, :neighborhood_id => 7, :activity_id => 7, :created_at => "2013-07-23 19:58:11", :updated_at => "2013-07-23 19:58:11" },
   { :id => 59, :neighborhood_id => 8, :activity_id => 7, :created_at => "2013-07-23 19:58:14", :updated_at => "2013-07-23 19:58:14" },
@@ -670,6 +681,16 @@ NeighborhoodActivity.create([
   { :id => 95, :neighborhood_id => 2, :activity_id => 13, :created_at => "2013-08-09 17:55:06", :updated_at => "2013-08-09 17:55:06" },
   { :id => 96, :neighborhood_id => 2, :activity_id => 14, :created_at => "2013-08-09 17:55:20", :updated_at => "2013-08-09 17:55:20" },
   { :id => 97, :neighborhood_id => 1, :activity_id => 14, :created_at => "2013-08-09 17:55:28", :updated_at => "2013-08-09 17:55:28" }
+], :without_protection => true )
+
+
+
+User.create([
+  { :id => 1, :first_name => "Carrie", :last_name => "Bradshaw", :user_name => "cbradshaw", :email => "cbradshaw@me.com", :password_hash => "$2a$10$XJhROs1wY4bGnjxX9Q9blO12yKrAkN3d83uzP9BaeL90LNTo5UTWG", :password_salt => "$2a$10$XJhROs1wY4bGnjxX9Q9blO", :created_at => "2013-06-25 03:22:54", :updated_at => "2013-07-02 22:23:23", :auth_token => "_89ITB2PMX66sIay3LzBCA", :password_reset_token => "TbqO1_dk23mXlh31LyP0pQ", :password_reset_sent_at => "2013-07-02 22:21:48" },
+  { :id => 2, :first_name => "Elaine", :last_name => "Benes", :user_name => "ebenes", :email => "ebenes@me.com", :password_hash => "$2a$10$T9e40esGTAzbXChpU89KK.izxOuxclfRFeCYuZMZb4c.qjBeV5d4C", :password_salt => "$2a$10$T9e40esGTAzbXChpU89KK.", :created_at => "2013-06-25 03:40:56", :updated_at => "2013-06-25 03:50:32", :auth_token => "Nqc15Rj7cix-QEDYjxZLFA", :password_reset_token => nil, :password_reset_sent_at => nil },
+  { :id => 3, :first_name => "Marcia", :last_name => "Brady", :user_name => "mbrady", :email => "mbrady@me.com", :password_hash => "$2a$10$xwxilhedYAXj50r8NAyHYujcGme/AvxYSdxwX4KbrL8Q/NVf06ikq", :password_salt => "$2a$10$xwxilhedYAXj50r8NAyHYu", :created_at => "2013-06-25 03:53:24", :updated_at => "2013-06-25 14:55:56", :auth_token => "QYWxRmSDzGRtIMHUe18V6Q", :password_reset_token => nil, :password_reset_sent_at => nil },
+  { :id => 4, :first_name => "Lois", :last_name => "Lane", :user_name => "loislane", :email => "llane@me.com", :password_hash => "$2a$10$4HhwkwVXRqw1Yi7Dk86UQe0TwBo5/.zaiNu5UgT5QonxXzs2UykDW", :password_salt => "$2a$10$4HhwkwVXRqw1Yi7Dk86UQe", :created_at => "2013-06-25 14:57:15", :updated_at => "2013-07-01 18:59:56", :auth_token => "68KWMtLzUoODtw3jpcdPNw", :password_reset_token => nil, :password_reset_sent_at => nil },
+  { :id => 6, :first_name => "Mick", :last_name => "Jagger", :user_name => "mickjagger", :email => "melissanyc25@aol.com", :password_hash => "$2a$10$Uqy.2BZQHy.wnAB4eLUP7eci3azAjY1JkjjTWO6qaHGYSFudmUGYK", :password_salt => "$2a$10$Uqy.2BZQHy.wnAB4eLUP7e", :created_at => "2013-07-10 16:31:29", :updated_at => "2013-08-11 19:25:23", :auth_token => "Azq61vgu4ymyW2cC5VmfKA", :password_reset_token => "PGTKO9qyhiwo4QuyUp42VA", :password_reset_sent_at => "2013-08-11 19:23:37" }
 ], :without_protection => true )
 
 
