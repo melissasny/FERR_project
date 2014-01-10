@@ -428,7 +428,7 @@ h4 {
     }
 }
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:900px){
      h1, h3{
           width:100%;
           font-size:2.4em;
