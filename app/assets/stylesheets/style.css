@@ -446,12 +446,12 @@ h4 {
      nav a{
           line-height:2em;
      }
-
+/* Jan 15 added button height */
      button{
           height:5em;
      }
 
-     #map h2, button{
+     #map h2{
           font-size:1.8em;
           font-size:4vw;
      }
