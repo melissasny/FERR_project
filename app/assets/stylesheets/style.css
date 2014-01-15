@@ -462,7 +462,7 @@ h4 {
      }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:480px){
      #map{
           display:none;
      }
@@ -484,7 +484,7 @@ h4 {
           padding-left:0;
      }
 }
-
+/*
 @media screen and (max-width:360px){
      h1, h3, #flash_alert, #flash_notice{
           font-size:1.4em;
@@ -493,3 +493,4 @@ h4 {
           font-size:1.0em;
      }
 }
+*/
