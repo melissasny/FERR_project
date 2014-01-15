@@ -127,11 +127,11 @@ nav a:hover{
      color:#FFF;
 }
 
-.selected{
-/* 
+/*
+.selected{ 
      font-weight: bold;
-*/
 }
+*/
 
 #map{
      position:relative;
@@ -263,11 +263,11 @@ li li{
      font-weight:normal;
 }
 
-li li:hover{
 /*
+li li:hover{
      font-weight:bold;
-*/
 }
+*/
 
 li li li{
      width:100%;
@@ -403,15 +403,15 @@ h4 {
      padding-left: 6%;
 }
 
-.display_comment span{
 /*
+.display_comment span{
      font-weight:bold;
-*/
 }
+*/
 /******************************************************************************/
 /*Media Queries*/
 /******************************************************************************/
-/*
+
 @media screen and (max-width: 1200px){
     h1, h3, #flash_alert, #flash_notice{
           font-size:2em;
@@ -429,7 +429,7 @@ h4 {
     }
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1024px){
      h1, h3{
           width:100%;
           font-size:2.4em;
@@ -492,49 +492,4 @@ h4 {
      nav, form#new_user, #new-session, form#new_comment, #password-reset, #password-edit{
           font-size:1.0em;
      }
-}
-*/
-/******************************************************************************/
-/*Media Queries*/
-/******************************************************************************/
-@media screen and (max-width:900px){
-     h1, h3{
-          width:100%;
-/*
-          font-size:2.4em;
-          font-size:7.5vw; 
-*/
-          text-align:center;
-     }
-     nav{
-          width:100%;
-          float:left;  
-/*
-          font-size:2em;
-          font-size:5.5vw;
-*/  
-          text-align:center;
-     }
-/*
-     nav a{
-          line-height:2em;
-     }
-
-     #map h2{
-          font-size:1.8em;
-          font-size:4vw;
-     }
-*/
-     #map {
-          width:100%;
-     }
-     #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments, #password-reset, #password-edit{
-          width:100%;
-          margin:0;
-     }
-/*
-     ul{
-          line-height:2.5em;
-     }
-*/
 }
