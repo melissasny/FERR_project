@@ -430,6 +430,9 @@ h4 {
 }
 
 @media screen and (max-width:1024px){
+     #map {
+          display:none;
+     }
      h1, h3{
           width:100%;
           font-size:2.4em;
@@ -446,6 +449,7 @@ h4 {
      nav a{
           line-height:2em;
      }
+/*
      #map h2{
           font-size:1.8em;
           font-size:4vw;
@@ -453,6 +457,7 @@ h4 {
      #map {
           width:100%;
      }
+*/
      #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments, #password-reset, #password-edit{
           width:100%;
           margin:0;
@@ -461,7 +466,7 @@ h4 {
           line-height:2.5em;
      }
 }
-
+/*
 @media screen and (max-width:480px){
      #map {
           display:none;
@@ -484,7 +489,7 @@ h4 {
           padding-left:0;
      }
 }
-/*
+
 @media screen and (max-width:360px){
      h1, h3, #flash_alert, #flash_notice{
           font-size:1.4em;
