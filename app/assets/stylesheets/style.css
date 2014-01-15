@@ -464,7 +464,7 @@ h4 {
      }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:700px){
      #map {
           display:none;
      }
