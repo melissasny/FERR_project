@@ -449,6 +449,7 @@ h4 {
 /* Jan 15 added button height */
      button{
           height:5em;
+          font-size: 1.8em;
      }
 
      #map h2{
