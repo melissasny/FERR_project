@@ -463,7 +463,7 @@ h4 {
 }
 
 @media screen and (max-width:480px){
-     #map{
+     #map {
           display:none;
      }
      h1, h3, nav, #flash_alert, #flash_notice{
