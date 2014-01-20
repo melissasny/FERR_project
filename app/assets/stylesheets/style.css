@@ -93,7 +93,7 @@ h2{
      top:0;
      left:0;  
      line-height: 1.5em;
-     line-height:6vh;
+ /*    line-height:6vh; */
      font-size:1.2em;
 /*     font-size:1.8vw; */
 /*     
@@ -178,6 +178,7 @@ img{
      height:5em;
      background-color:#000;
      color:#FFF51A;
+     font-size:1.5em;
 /*
      font-weight:bold;
 */
@@ -233,7 +234,7 @@ button#about-button{
 /**********************************************************************************/
 ul{
      list-style-type:none;    
-     line-height: 2.5em;
+     line-height: 3.5em;
 }
 
 li{
@@ -273,11 +274,11 @@ li li li{
      width:100%;
      color:#0FCFDF;
      font-weight:normal;
-     line-height: 1.5em;
+     line-height: 2.5em;
 }
 
 li a:nth-last-of-type(1){
-          line-height:2em;
+          line-height:3em;
      }
 
 li li li:hover {
