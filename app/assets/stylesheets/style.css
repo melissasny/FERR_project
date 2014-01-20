@@ -428,7 +428,7 @@ h4 {
           margin-left:25%;
     }
 }
-*/
+
 @media screen and (max-width:1024px){
      h1, h3{
           width:100%;
@@ -451,7 +451,7 @@ h4 {
           margin:0;
      }
 }
-
+/*
 @media screen and (max-width:640px){
      #map{
      display:none;
