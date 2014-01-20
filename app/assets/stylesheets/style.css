@@ -75,8 +75,7 @@ header p{
 h1{
      width: 50%;
      float:left;
-     font-size:2.4em;
-/*     font-size:2.8vw; */   
+     font-size:2.4em;  
      color:#46FF00;
      margin:0;
      padding-left:2.5%;
@@ -93,12 +92,7 @@ h2{
      top:0;
      left:0;  
      line-height: 1.5em;
- /*    line-height:6vh; */
      font-size:1.2em;
-/*     font-size:1.8vw; */
-/*     
-     font-weight:bold;
-*/
      background-color:#FFF;
      color:#000;
      margin:0;
@@ -109,8 +103,7 @@ nav{
      width:50%;
      float:left; 
      font-size:2.4em;
-/*     font-size:2.8vw; */
-     margin:0; 
+     margin:0 0 2em 0; 
      padding:0;
      text-align:right;
      padding-right:2.5%;
@@ -126,12 +119,6 @@ nav a{
 nav a:hover{
      color:#FFF;
 }
-
-/*
-.selected{ 
-     font-weight: bold;
-}
-*/
 
 #map{
      position:relative;
@@ -179,15 +166,12 @@ img{
      background-color:#000;
      color:#FFF51A;
      font-size:1.5em;
-/*
-     font-weight:bold;
-*/
       /*include browser-specific prefixes for CSS3 element*/
      -webkit-border-radius: 0.5em 0.5em; 
      -ie-border-radius: 0.5em 0.5em; 
      border-radius:0.5em 0.5em;
      float:left;
-     margin:0 10% 2em 10%;
+     margin:0 10% 1em 10%;
      border:1px solid #FFF51A;
      -webkit-user-select:none; 
 }
@@ -195,9 +179,6 @@ img{
 #main-content button:hover{
      background-color:#FFF51A;
      color:#000;
-/*
-     font-weight:bold;
-*/
 }
 
 #about{
@@ -235,15 +216,13 @@ button#about-button{
 ul{
      list-style-type:none;    
      line-height: 3.5em;
+     font-size: 2.5em;
 }
 
 li{
      display:none;   
      width:80%;
-     color:#46FF00;
-/*  
-     font-weight:bold;
-*/  
+     color:#46FF00;  
      margin-left:5%;
      cursor:pointer; 
      -webkit-user-select:none;  
@@ -263,12 +242,6 @@ li li{
      color:#FFF51A;
      font-weight:normal;
 }
-
-/*
-li li:hover{
-     font-weight:bold;
-}
-*/
 
 li li li{
      width:100%;
