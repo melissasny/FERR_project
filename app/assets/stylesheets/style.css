@@ -213,7 +213,7 @@ button#about-button{
 ul{
      list-style-type:none;    
      line-height: 3.5em;
-     font-size: 1.2em;
+     font-size: 1em;
      font-weight:normal;
 }
 
@@ -223,7 +223,7 @@ li{
      color:#46FF00;  
      margin-left:5%;
      cursor:pointer; 
-     font-size:0.8em;
+     font-size:1em;
      font-weight:normal;
      -webkit-user-select:none;  
 }
