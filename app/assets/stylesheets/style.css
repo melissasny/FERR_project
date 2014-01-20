@@ -223,7 +223,7 @@ li{
      color:#46FF00;  
      margin-left:5%;
      cursor:pointer; 
-     font-size:1.1em;
+     font-size:0.8em;
      font-weight:normal;
      -webkit-user-select:none;  
 }
@@ -240,11 +240,15 @@ li a:nth-last-of-type(1){
 li li{ 
      width:100%;
      color:#FFF51A;
+     font-size:1em;
+     font-weight: normal;
 }
 
 li li li{
      width:100%;
      color:#0FCFDF;
+     font-size:1em;
+     font-weight: normal;
      line-height: 2.5em;
 }
 /*
@@ -254,6 +258,7 @@ li a:nth-last-of-type(1){
 */
 li li li:hover {
      color:#0FCFDF;
+     font-weight:normal;
 }
 /******************************************************************************/
 /*Styling for all other views and forms*/
