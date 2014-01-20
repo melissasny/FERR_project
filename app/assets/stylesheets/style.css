@@ -213,8 +213,8 @@ button#about-button{
 ul{
      list-style-type:none;    
      line-height: 3.5em;
-     font-size: 1em;
-     font-weight:normal;
+ /*    font-size: 1em;
+     font-weight:normal; */
 }
 
 li{
@@ -223,7 +223,7 @@ li{
      color:#46FF00;  
      margin-left:5%;
      cursor:pointer; 
-     font-size:1em;
+     font-size:1.2em;
      font-weight:normal;
      -webkit-user-select:none;  
 }
@@ -240,7 +240,7 @@ li a:nth-last-of-type(1){
 li li{ 
      width:100%;
      color:#FFF51A;
-     font-size:1em;
+     font-size:1.1em;
      font-weight: normal;
 }
 
