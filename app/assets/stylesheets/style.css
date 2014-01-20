@@ -76,7 +76,7 @@ h1{
      width: 50%;
      float:left;
      font-size:2.4em;
-     font-size:2.8vw;   
+/*     font-size:2.8vw; */   
      color:#46FF00;
      margin:0;
      padding-left:2.5%;
@@ -95,7 +95,7 @@ h2{
      line-height: 1.5em;
      line-height:6vh;
      font-size:1.2em;
-     font-size:1.8vw;
+/*     font-size:1.8vw; */
 /*     
      font-weight:bold;
 */
@@ -109,7 +109,7 @@ nav{
      width:50%;
      float:left; 
      font-size:2.4em;
-     font-size:2.8vw;
+/*     font-size:2.8vw; */
      margin:0; 
      padding:0;
      text-align:right;
@@ -173,9 +173,9 @@ img{
      color:#FFF;
 }
 
-button{
+#main-content button{
      width:80%;
-     height:3em;
+     height:5em;
      background-color:#000;
      color:#FFF51A;
 /*
@@ -186,7 +186,7 @@ button{
      -ie-border-radius: 0.5em 0.5em; 
      border-radius:0.5em 0.5em;
      float:left;
-     margin:0 10% 1em 10%;
+     margin:0 10% 2em 10%;
      border:1px solid #FFF51A;
      -webkit-user-select:none; 
 }
@@ -290,7 +290,7 @@ h3 {
      width:100%;
      text-align: center;
      font-size:2.4em;
-     font-size:2.8vw;   
+/*     font-size:2.8vw; */   
      color:#FFF51A;
      text-transform:lowercase;
      margin:0;
