@@ -235,6 +235,10 @@ li a:nth-last-of-type(1){
      text-decoration: none;
 }
 
+li a:nth-last-of-type(1):hover{
+     font-weight: bold;
+}
+
 li li{ 
      width:100%;
      color:#FFF51A;
