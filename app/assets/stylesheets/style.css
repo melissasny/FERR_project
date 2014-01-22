@@ -225,7 +225,7 @@ li{
      -webkit-user-select:none;  
 }
 
-li a, li span{
+li a{
      color:#0FCFDF;
 }
 
@@ -248,6 +248,10 @@ li li li:hover {
 li a:nth-last-of-type(1){
      color:#46FF00;
      text-decoration: none;
+}
+
+li li li span, li span{
+     color:#0FCFDF;
 }
 /******************************************************************************/
 /*Styling for all other views and forms*/
