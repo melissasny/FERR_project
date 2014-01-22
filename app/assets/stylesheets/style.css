@@ -245,13 +245,9 @@ li li li:hover {
      font-weight:bold;
 }
 
-li a:nth-last-of-type(1){
+li a:nth-last-of-type(0){
      color:#46FF00;
      text-decoration: none;
-}
-
-li li li span{
-     color:#0FCFDF;
 }
 /****************************g**************************************************/
 /*Styling for all other views and forms*/
