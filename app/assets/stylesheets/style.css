@@ -225,6 +225,10 @@ li{
      -webkit-user-select:none;  
 }
 
+li a{
+     color:#0FCFDF;
+}
+
 li li{ 
      width:100%;
      color:#FFF51A;
