@@ -230,7 +230,7 @@ li{
 li li{ 
      width:100%;
      color:#FFF51A;
-     font-size:1.1em;
+     font-size:1em;
 }
 
 li li li{
@@ -244,13 +244,13 @@ li li li:hover {
      font-weight:bold;
 }
 
+li span{
+     color:#0FCFDF;  
+}
+
 li a:nth-last-of-type(1){
      color:#46FF00;
      text-decoration: none;
-}
-
-li span{
-     color:#0FCFDF;  
 }
 /****************************g**************************************************/
 /*Styling for all other views and forms*/
