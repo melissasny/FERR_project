@@ -190,6 +190,7 @@ img{
      background-color: -webkit-rgba(0,0,0,0.7);
      background-color: -ie-rgba(0,0,0,0.7);
      background-color: rgba(0,0,0,0.7);
+     color:#000;
 }
 
 button#about-button{
@@ -199,8 +200,12 @@ button#about-button{
      padding-right:5%;
      height:11.5em;
      color:#FFF;
-     border-color:#46FF00;
      font-weight:normal;
+      /*include browser-specific prefixes for CSS3 element*/
+     -webkit-border-radius: 0.5em 0.5em; 
+     -ie-border-radius: 0.5em 0.5em; 
+     border-radius:0.5em 0.5em;
+     border:1px solid #46FF00;
      background-color:#000;
 }
 
