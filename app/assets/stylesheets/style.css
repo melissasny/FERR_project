@@ -213,8 +213,6 @@ button#about-button{
 ul{
      list-style-type:none;    
      line-height: 3.5em;
- /*    font-size: 1em;
-     font-weight:normal; */
 }
 
 li{
@@ -251,11 +249,7 @@ li li li{
      font-weight: normal;
      line-height: 2.5em;
 }
-/*
-li a:nth-last-of-type(1){
-          line-height:3em;
-     }
-*/
+
 li li li:hover {
      color:#0FCFDF;
      font-weight:normal;
@@ -402,13 +396,11 @@ h4 {
 @media screen and (max-width:1024px){
      h1, h3{
           width:100%;
-/*          font-size:2.4em; */
           text-align:center;
      }
      nav{
           width:100%;
           float:left;  
-/*          font-size:2em;  */
           text-align:center;
      }
 
