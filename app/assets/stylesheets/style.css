@@ -410,10 +410,9 @@ h4 {
           margin:0;
      }
 }
-/*
-@media screen and (max-width:600px){
-     #map, #about {
+
+@media screen and (max-width:700px){
+     #map, #flexible-container, #about {
      display:none;
      }
 }
-*/
