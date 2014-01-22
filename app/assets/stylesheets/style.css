@@ -166,6 +166,7 @@ img{
      background-color:#000;
      color:#FFF51A;
      font-size:1.5em;
+     font-weight:normal;
       /*include browser-specific prefixes for CSS3 element*/
      -webkit-border-radius: 0.5em 0.5em; 
      -ie-border-radius: 0.5em 0.5em; 
@@ -221,7 +222,7 @@ li{
      color:#46FF00;  
      margin-left:5%;
      cursor:pointer; 
-     font-size:1.3em;
+     font-size:1.4em;
      font-weight:normal; 
      -webkit-user-select:none;  
 }
@@ -230,14 +231,12 @@ li li{
      width:100%;
      color:#FFF51A;
      font-size:1.1em;
-/*     font-weight: normal; */
 }
 
 li li li{
      width:100%;
      color:#0FCFDF;
      font-size:1em;
-/*     font-weight: normal; */
      line-height: 2.5em;
 }
 
