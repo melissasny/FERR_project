@@ -225,7 +225,7 @@ li{
      -webkit-user-select:none;  
 }
 
-li a{
+li a, li span{
      color:#0FCFDF;
 }
 
@@ -245,11 +245,11 @@ li li li:hover {
      font-weight:bold;
 }
 
-li a:nth-last-of-type(0){
+li a:nth-last-of-type(1){
      color:#46FF00;
      text-decoration: none;
 }
-/****************************g**************************************************/
+/******************************************************************************/
 /*Styling for all other views and forms*/
 /******************************************************************************/
 h3 {
