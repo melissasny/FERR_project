@@ -250,8 +250,8 @@ li a:nth-last-of-type(1){
      text-decoration: none;
 }
 
-#phone{
-      color:#0FCFDF;
+li li li span{
+     color:#0FCFDF;
 }
 /****************************g**************************************************/
 /*Styling for all other views and forms*/
