@@ -226,19 +226,6 @@ li{
      -webkit-user-select:none;  
 }
 
-li a{
-     color:#0FCFDF;
-}
-
-li a:nth-last-of-type(1){
-     color:#46FF00;
-     text-decoration: none;
-}
-
-li a:nth-last-of-type(1):hover{
-     font-weight: bold;
-}
-
 li li{ 
      width:100%;
      color:#FFF51A;
@@ -255,8 +242,16 @@ li li li{
 }
 
 li li li:hover {
-     color:#0FCFDF;
      font-weight:bold;
+}
+/*
+li a{
+     color:#0FCFDF;
+}
+*/
+li a:nth-last-of-type(1){
+     color:#46FF00;
+     text-decoration: none;
 }
 /******************************************************************************/
 /*Styling for all other views and forms*/
