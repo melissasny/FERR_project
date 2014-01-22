@@ -233,6 +233,7 @@ li a{
 li a:nth-last-of-type(1){
      color:#46FF00;
      text-decoration: none;
+     font-weight:bold;
 }
 
 li li{ 
@@ -252,7 +253,7 @@ li li li{
 
 li li li:hover {
      color:#0FCFDF;
-     font-weight:normal;
+     font-weight:bold;
 }
 /******************************************************************************/
 /*Styling for all other views and forms*/
