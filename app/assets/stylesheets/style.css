@@ -213,7 +213,6 @@ button#about-button-narrow{
      background-color: -webkit-rgba(0,0,0,0.7);
      background-color: -ie-rgba(0,0,0,0.7);
      background-color: rgba(0,0,0,0.7);
-     background-color:#000;
 }
 
 button#about-button{
@@ -232,7 +231,7 @@ button#about-button{
      background-color:#000;
 }
 
-#about-button span#about-button-narrow span{
+#about-button span, #about-button-narrow span{
      color:#46FF00;
 }
 /**********************************************************************************/
