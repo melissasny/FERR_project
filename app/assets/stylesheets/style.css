@@ -194,9 +194,26 @@ img{
      color:#000;
 }
 
-button#about-button-narrow{
+
+button#about-button{
+     width:90%;
+     margin:2.3em 5% 1em 5%;
+     padding-left:5%;
+     padding-right:5%;
+     height:11.5em;
+     color:#FFF;
+     font-weight:normal;
+      /*include browser-specific prefixes for CSS3 element*/
+     -webkit-border-radius: 0.5em 0.5em; 
+     -ie-border-radius: 0.5em 0.5em; 
+     border-radius:0.5em 0.5em;
+     border:1px solid #46FF00;
+     background-color:#000;
+}
+
+button#about-button-narrow-screen{
      display:none;
-     width:100%;
+     width:90%;
      margin:2.3em 5% 1em 5%;
      padding-left:5%;
      padding-right:5%;
@@ -215,23 +232,7 @@ button#about-button-narrow{
      background-color: rgba(0,0,0,0.7);
 }
 
-button#about-button{
-     width:90%;
-     margin:2.3em 5% 1em 5%;
-     padding-left:5%;
-     padding-right:5%;
-     height:11.5em;
-     color:#FFF;
-     font-weight:normal;
-      /*include browser-specific prefixes for CSS3 element*/
-     -webkit-border-radius: 0.5em 0.5em; 
-     -ie-border-radius: 0.5em 0.5em; 
-     border-radius:0.5em 0.5em;
-     border:1px solid #46FF00;
-     background-color:#000;
-}
-
-#about-button span, #about-button-narrow span{
+#about-button span, #about-button-narrow-screen span{
      color:#46FF00;
 }
 /**********************************************************************************/
@@ -411,7 +412,7 @@ h4 {
           padding-right: 0;
      }
 
-     button#about-button-narrow{
+     button#about-button-narrow-screen{
           display:inline;
      }
 
