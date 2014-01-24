@@ -200,6 +200,7 @@ button#about-button-narrow{
      margin:2.3em 5% 1em 5%;
      padding-left:5%;
      padding-right:5%;
+     font-size:1.8em;
      height:11.5em;
      color:#FFF;
      font-weight:normal;
@@ -231,7 +232,7 @@ button#about-button{
      background-color:#000;
 }
 
-#about-button span{
+#about-button span#about-button-narrow span{
      color:#46FF00;
 }
 /**********************************************************************************/
