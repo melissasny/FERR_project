@@ -390,17 +390,11 @@ h4 {
      }
 
      #map{
-          width:100%;
+          display:none;
      }
 
      #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments, #password-reset, #password-edit{
-          width:100%;
-          margin:0;
-     }
-}
-
-@media screen and (max-width:750px){
-     #map{
-     display:none;
+          width:50%;
+          margin:0 0 25% 0;
      }
 }
