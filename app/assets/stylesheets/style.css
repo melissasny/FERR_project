@@ -215,8 +215,7 @@ button#about-button-narrow-screen{
      display:none;
      width:90%;
      margin:2.3em 5% 1em 5%;
-     padding-left:5%;
-     padding-right:5%;
+     padding:0 5% 0 5%;
      font-size:1.8em;
      height:11.5em;
      color:#FFF;
@@ -227,9 +226,9 @@ button#about-button-narrow-screen{
      border-radius:0.5em 0.5em;
      border:1px solid #46FF00;
      /*include browser-specific prefixes for CSS3 element*/
-     background-color: -webkit-rgba(0,0,0,0.7);
-     background-color: -ie-rgba(0,0,0,0.7);
-     background-color: rgba(0,0,0,0.7);
+     background-color: -webkit-rgba(0,0,0,0.8);
+     background-color: -ie-rgba(0,0,0,0.8);
+     background-color: rgba(0,0,0,0.8);
 }
 
 #about-button span, #about-button-narrow-screen span{
