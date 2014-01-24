@@ -387,6 +387,7 @@ h4 {
           float:left; 
           margin:0.5em 0 1em 0; 
           text-align:center;
+          padding-right: 0;
      }
 
      #map{
@@ -400,5 +401,6 @@ h4 {
 
      header p{
           text-align: center;
+          padding-right: 0;
      }
 }
