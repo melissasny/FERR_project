@@ -398,7 +398,7 @@ h4 {
 /******************************************************************************/
 /*Media Queries*/
 /******************************************************************************/
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
      h1, h3{
           width:100%;
           text-align:center;
@@ -426,7 +426,7 @@ h4 {
      }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 0px) and (max-width: 768px){
      button#about-button-narrow-screen{
           display:inline;
      }
