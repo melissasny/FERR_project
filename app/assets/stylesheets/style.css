@@ -430,7 +430,7 @@ h4 {
      }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 900px){
      h1{
           color:purple;
      }
