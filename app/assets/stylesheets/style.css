@@ -398,7 +398,7 @@ h4 {
 /******************************************************************************/
 /*Media Queries*/
 /******************************************************************************/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 500px){
      h1, h3{
           width:100%;
           text-align:center;
@@ -427,11 +427,5 @@ h4 {
      header p{
           text-align: center;
           padding-right: 0;
-     }
-}
-
-@media screen and (max-width: 900px){
-     h1{
-          color:purple;
      }
 }
