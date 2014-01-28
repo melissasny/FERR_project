@@ -411,8 +411,12 @@ h4 {
           padding-right: 0;
      }
 
+     button#about-button-narrow-screen{
+          display:inline;
+     }
+
      #map{
-          width:100%;
+          display:hide;
      }
 
      #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments, #password-reset, #password-edit{
@@ -423,15 +427,5 @@ h4 {
      header p{
           text-align: center;
           padding-right: 0;
-     }
-}
-
-@media screen and (max-device-width:360px){
-     button#about-button-narrow-screen{
-          display:inline;
-     }
-
-     #map{
-          display:none;
      }
 }
