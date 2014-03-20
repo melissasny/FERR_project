@@ -398,6 +398,7 @@ h4 {
 /******************************************************************************/
 /*Media Queries*/
 /******************************************************************************/
+/*
 @media only screen and (max-width: 1024px){
      h1, h3{
           width:100%;
@@ -429,13 +430,13 @@ h4 {
           padding-right: 0;
      }
 }
-
+*/
 /******************************************************************************/
 /*Media Queries*/
 /******************************************************************************/
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:1300px){
       body{
-          width:1000px;
+          width:1300px;
      }
 }
 
@@ -456,7 +457,7 @@ h4 {
     }
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:768px){
      h1, h3{
           width:100%;
           font-size:2.4em; 
@@ -486,9 +487,12 @@ h4 {
      }
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:767px){
      #map{
           display:none;
+     }
+     button#about-button-narrow-screen{
+          display:inline;
      }
      h1, h3, nav, #flash_alert, #flash_notice{
           text-align:left;
