@@ -26,13 +26,20 @@ Developer @GA in NYC
 /******************************************************************************/
 /*Styling for the primary view - views/facilities/index.html.erb*/
 /******************************************************************************/
-body{
+body, header, img, h2, #about
+#flexible-container,
+#flexible-container iframe, 
+#flexible-container object,  
+#flexible-container embed, 
+li li, li li li, h3{
      width:100%;
-     font-family: Verdana, Tahoma, sans-serif;
+}
 
+body{
+     font-family: Verdana, Tahoma, sans-serif;
+     font-weight: normal;
      background:#000 url(/assets/manhattan-skyline-night-new-york-city-black-and-white.jpg) no-repeat;
      /*include browser-specific prefixes for CSS3 element*/
-
      -webkit-background-size: cover; 
      -ie-background-size: cover; 
      background-size:cover;
@@ -43,346 +50,284 @@ body{
      margin:auto;
 }
 
+header, nav a:hover, #flash_alert, #main-content, button#about-button, 
+button#about-button-narrow-screen, form#new_user, #password-edit, 
+#new-session, #password-reset, form#new_comment, #show_facility_comments{
+     color:#FFF;
+}
+
+h1, #about-button span, #about-button-narrow-screen span, li, li a:nth-of-type(2){
+     color:#46FF00;  
+}
+
+header p, #flash_notice,#main-content button, li li, h3, #new-session a, 
+#show_facility_comments a, h4{
+     color:#FFF51A;
+}
+
+#map h2, #main-content button:hover, .display_comment{
+     color:#000;
+}
+
+nav a, li a, li li li{
+     color:#0FCFDF;
+}
+
+/*Header*/
+
 header{
-     width:100%;
-     color:#FFF;
-     margin-top:0.5em;
-     margin-bottom:1em;
+     margin:0.5em 0 1em 0;
 }
 
-header p{
-     color:#FFF51A;
+h1, nav, #flash_alert, #flash_notice, h3{
+     font-size:2.4em;
+}
+
+header p, #main-content h2, #main-content button, button#about-button, 
+button#about-button-narrow-screen{
      font-size: 1.8em;
-     text-align:right;
-     padding-right:2.5%;
-     line-height:1;
 }
 
-#flash_alert{
-     color:#FFF;
-     text-align:center;
-     font-size:2.4em;
-     padding-top:2em;
-}
-
-#flash_notice{
-     color:#FFF51A;
-     text-align:center;
-     font-size:2.4em;
-}
-
-h1{
-     width: 50%;
+h1, nav, #map, #main-content, #main-content button, .comment_text, .display_comment img{
      float:left;
-     font-size:2.4em;  
-     color:#46FF00;
+}
+h1, nav,#map, #flash_alert{
+     width: 50%;
+}
+
+h1, map h2, h3{
      margin:0;
+}
+
+h1, h3{ 
      padding-left:2.5%;
 }
 
-/* map title */
-#map h2{
-     position:relative; 
-     top:0;
-     left:0;  
-     line-height: 1.5em;
-     font-size:1.2em;
-     background-color:#FFF;
-     color:#000;
-     margin:0;
-     padding:0;
+nav, header p, .pagination{
+     text-align: right;
+}
+
+nav, header p{
+     padding-right:2.5%; 
 }
 
 nav{
-     width:50%;
-     float:left; 
-     font-size:2.4em;
      margin:0 0 1em 0; 
+}
+
+nav a, #main-content button, li{
+     -webkit-user-select:none; 
+}
+
+nav a, li a:nth-of-type(2){
+    text-decoration: none;  
+}
+
+nav a, h3{
+     text-transform: lowercase;   
+}
+
+header p{
+     line-height:1;
+}
+
+h2, #flash_alert,#flash_notice, h3{
+     text-align:center;
+}
+
+#flash_alert{
+     margin-top:2em;
+     margin-left: 25%;
+}
+
+#map h2, #map, #flexible-container{
+     position:relative;
+}
+
+/* map title */
+#map h2, li li li{
+     line-height:1.5em;
+}
+
+#map h2, form#new_user, #password-edit, #new-session, #password-reset, 
+form#new_comment, #show_facility_comments{
+     font-size:1.2em;
+}
+
+#map h2, .display_comment{
+     background-color: #FFF;
+}
+
+#map h2{
+     top:0;
+     left:0;  
      padding:0;
-     text-align:right;
-     padding-right:2.5%;
-}
-
-nav a{
-     color:#0FCFDF;
-     text-decoration: none; 
-     text-transform: lowercase; 
-     -webkit-user-select:none;   
-}
-
-nav a:hover{
-     color:#FFF;
 }
 
 #map{
-     position:relative;
-     width:50%;
-     float:left; 
      height: 0; 
      margin-right:2.5%;
 }
 
 /* Flexible iFrame */
-#flexible-container {
-     position:relative;
-     width:100%;
-}
 
-img{
+img,
+#flexible-container iframe,   
+#flexible-container object,  
+#flexible-container embed{
      position:absolute;
-     width:100%; 
 }
 
 #flexible-container iframe,   
 #flexible-container object,  
 #flexible-container embed {
-     position: absolute;
      top: 0;
      left: 0;
-     width: 100%;
      height:31em;
 }
 
-#main-content{
-     width:40%;
-     float:left;
-     margin:0 5% 0 2.5%;
+#main-content, #about, #flash_alert, form#new_user, #password-edit, #new-session, 
+#password-reset, form#new_comment, #show_facility_comments{
      /*include browser-specific prefixes for CSS3 element*/
      background-color: -webkit-rgba(0,0,0,0.7);
      background-color: -ie-rgba(0,0,0,0.7);
      background-color: rgba(0,0,0,0.7);
-     color:#FFF;
 }
 
-h2{
-     width:100%;
-     text-align: center;
+#main-content, form#new_comment{
+     width:40%;
 }
 
-#main-content button{
-     width:90%;
-     height:5em;
+#main-content{
+     margin:0 5% 0 2.5%;
+}
+
+#main-content button, button#about-button{
      background-color:#000;
-     color:#FFF51A;
-     font-size:1.5em;
-     font-weight:normal;
+}
+
+#main-content button, button#about-button, button#about-button-narrow-screen, li, 
+form#new_user input, #new-session input, form#new_comment select, 
+form#new_comment textarea #password-reset input, #password-edit input{
+      width:90%;
+}
+
+#main-content button, button#about-button, button#about-button-narrow-screen,
+.display_comment{
       /*include browser-specific prefixes for CSS3 element*/
      -webkit-border-radius: 0.5em 0.5em; 
      -ie-border-radius: 0.5em 0.5em; 
      border-radius:0.5em 0.5em;
-     float:left;
+}
+
+#main-content button{
+     height:3em;
      margin:0 5% 1em 5%;
      border:1px solid #FFF51A;
-     -webkit-user-select:none; 
 }
 
 #main-content button:hover{
      background-color:#FFF51A;
-     color:#000;
 }
 
-#about{
-     width:100%;
-     height:15.75em;
-     padding-left:5%;
+#about, ul{
+     padding-left: 5%;
+}
+
+#about, .display_comment p:nth-of-type(2){
      padding-right: 5%;
-     font-size:1.8em; 
-     /*include browser-specific prefixes for CSS3 element*/
-     background-color: -webkit-rgba(0,0,0,0.7);
-     background-color: -ie-rgba(0,0,0,0.7);
-     background-color: rgba(0,0,0,0.7);
-     color:#000;
+}
+
+button#about-button, button#about-button-narrow-screen{
+     border:1px solid #46FF00;
+     padding:5%;   
 }
 
 button#about-button{
-     width:90%;
      margin:2.3em 5% 1em 5%;
-     padding-left:5%;
-     padding-right:5%;
-     height:11.5em;
-     color:#FFF;
-     font-weight:normal;
-      /*include browser-specific prefixes for CSS3 element*/
-     -webkit-border-radius: 0.5em 0.5em; 
-     -ie-border-radius: 0.5em 0.5em; 
-     border-radius:0.5em 0.5em;
-     border:1px solid #46FF00;
-     background-color:#000;
+}
+
+button#about-button-narrow-screen, li{
+     display:none;
 }
 
 button#about-button-narrow-screen{
-     display:none;
-     width:90%;
-     margin:1.5em 5% 1.5em 5%;
-     padding:0 5% 0 5%;
-     font-size:1.8em;
-     height:11.5em;
-     color:#FFF;
-     font-weight:normal;
-      /*include browser-specific prefixes for CSS3 element*/
-     -webkit-border-radius: 0.5em 0.5em; 
-     -ie-border-radius: 0.5em 0.5em; 
-     border-radius:0.5em 0.5em;
-     border:1px solid #46FF00;
+     margin:1.5em 5%;
      /*include browser-specific prefixes for CSS3 element*/
      background-color: -webkit-rgba(0,0,0,0.8);
      background-color: -ie-rgba(0,0,0,0.8);
      background-color: rgba(0,0,0,0.8);
-}
-
-#about-button span, #about-button-narrow-screen span{
-     color:#46FF00;
+     background-color:#000;
 }
 /**********************************************************************************/
 /*Styling for the nested lists in the primary view -view/facilities/index.html.erb*/
 /**********************************************************************************/
 ul{
      list-style-type:none;    
-     line-height: 3.5em;
-     padding-left:5%;
+     line-height: 2.5em;
 }
 
-li{
-     display:none;   
-     width:90%;
-     color:#46FF00;  
+li, .pagination, h4{
+     font-size: 1.4em;
+}
+
+li{   
      cursor:pointer; 
-     font-size:1.4em;
-     font-weight:normal; 
-     -webkit-user-select:none;  
-}
-
-li a{
-     color:#0FCFDF;
+     font-weight:normal;  
 }
 
 li li{ 
-     width:100%;
-     color:#FFF51A;
      font-size:1em;
-}
-
-li li li{
-     width:100%;
-     color:#0FCFDF;
-     line-height: 2.5em;
 }
 
 li li li:hover {
      font-weight:bold;
 }
-
-li a:nth-of-type(2){
-     color:#46FF00;
-     text-decoration: none;
-}
 /******************************************************************************/
 /*Styling for all other views and forms*/
 /******************************************************************************/
-h3 {
-     width:100%;
-     text-align: center;
-     font-size:2.4em;  
-     color:#FFF51A;
-     text-transform:lowercase;
-     margin:0;
-     padding-left:2.5%;  
+form#new_user, #password-edit, form#new_comment, #show_facility_comments{
+     padding-left: 2%;
 }
 
 form#new_user, #password-edit {
      width:30%;
-     font-size:1.2em;
      margin-left:36%; 
-     padding-left:2%;
-     /*include browser-specific prefixes for CSS3 element*/
-     background-color: -webkit-rgba(0,0,0,0.7);
-     background-color: -ie-rgba(0,0,0,0.7);
-     background-color: rgba(0,0,0,0.7);
-     color:#FFF;
 }
 
 #new-session, #password-reset {
      width:25%;
-     font-size:1.2em;
      margin-left:38%; 
      margin-top:4em;
      padding-left:3.5%;
-     /*include browser-specific prefixes for CSS3 element*/
-     background-color: -webkit-rgba(0,0,0,0.7);
-     background-color: -ie-rgba(0,0,0,0.7);
-     background-color: rgba(0,0,0,0.7);
-     color:#FFF;
 }
 
 form#new_comment {
-     width:40%;
-     font-size:1.2em;
      margin-left:30%; 
-     padding-left:2%;
-     /*include browser-specific prefixes for CSS3 element*/
-     background-color: -webkit-rgba(0,0,0,0.7);
-     background-color: -ie-rgba(0,0,0,0.7);
-     background-color: rgba(0,0,0,0.7);
-     color:#FFF;
-}
- form#new_user input, #new-session input, form#new_comment select, form#new_comment textarea #password-reset input, #password-edit input {
-          width:90%;
 }
 
 #new-session input#remember_me{
      width:5%;
 }
 
-#new-session a{
-     color:#FFF51A;;
-}
-
-.pagination{
-     text-align: right;
-     font-size:1.4em;
-}
-
 #show_facility_comments {
      width:80%;
-     font-size:1.2em;
      margin-left:10%; 
      margin-top:1.5em;
-     padding-left:2%;
      padding-right:2%;
-     /*include browser-specific prefixes for CSS3 element*/
-     background-color: -webkit-rgba(0,0,0,0.7);
-     background-color: -ie-rgba(0,0,0,0.7);
-     background-color: rgba(0,0,0,0.7);
-     color:#FFF;
-}
-
-#show_facility_comments a, h4{
-     color: #FFF51A;
-}
-
-h4 {
-     font-size:1.4em;
 }
 
 .display_comment{
-     background-color:#FFF;
-     color:#000;
-     /*include browser-specific prefixes for CSS3 element*/
-     -webkit-border-radius: 0.5em 0.5em; 
-     -ie-border-radius: 0.5em 0.5em; 
-     border-radius:0.5em 0.5em;
      border:2px solid #46FF00;
 }
 
 .comment_text{
      width:75%;
-     float:left;
 }
 
 .display_comment img{
      width:10%;
      position:static;
-     float:left;
      margin:0.5em 5% 0.5em 1%; 
 }
 
@@ -391,53 +336,10 @@ h4 {
 }
 
 .display_comment p:nth-of-type(2){
-     padding-right:5%;
      padding-left: 6%;
 }
 /******************************************************************************/
 /*Media Queries*/
-/******************************************************************************/
-/*
-@media only screen and (max-width: 1024px){
-     h1, h3{
-          width:100%;
-          text-align:center;
-     }
-     nav{
-          width:100%;
-          float:left; 
-          margin:0.5em 0 1em 0; 
-          text-align:center;
-          padding-right: 0;
-     }
-
-     button#about-button-narrow-screen{
-          display:inline;
-     }
-
-     #map{
-          display:hide;
-     }
-
-     #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments, #password-reset, #password-edit{
-          width:66%;
-          margin:0 0 0 17%;
-     }
-
-     header p{
-          text-align: center;
-          padding-right: 0;
-     }
-}
-
-@media only screen and (min-width:1300px){
-      body{
-          width:1300px;
-     }
-}
-*/
-/******************************************************************************/
-/*Original Media Queries*/
 /******************************************************************************/
 @media only screen and (min-width:1300px){
       body{
@@ -480,19 +382,23 @@ h4 {
      #map h2{
           font-size:1.8em;
      }
-     #map {
+     #main-content, form#new_user, #new-session, form#new_comment, 
+     #show_facility_comments, #password-reset, #password-edit, #map {
           width:100%;
      }
-     #main-content, form#new_user, #new-session, form#new_comment, #show_facility_comments, #password-reset, #password-edit{
-          width:100%;
+     #main-content, form#new_user, #new-session, form#new_comment, 
+     #show_facility_comments, #password-reset, #password-edit{
           margin:0;
      }
-     ul{
-          line-height:2.5em;
+     #main-content button{
+          height:5em;
+     }
+     li li li{
+          line-height: 2.5em;
      }
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:480px){
      #map{
           display:none;
      }
@@ -502,27 +408,13 @@ h4 {
      h1, h3, nav, #flash_alert, #flash_notice{
           text-align:left;
      }
-     h1, h3,#flash_alert, #flash_notice{
-          padding-left:0;
-          font-size: 2em;
+     h1, h3{
+          font-size:1.4em;
      }
-     nav{
-          font-size:1.6em;
+     nav, #flash_alert, #flash_notice, form#new_user, #new-session, form#new_comment, #password-reset, #password-edit{
+          font-size:1.0em;
      }
      nav a{
           padding-right:3%;
-     }
-     ul{
-          margin-left:5%;
-          padding-left:0;
-     }
-}
-
-@media only screen and (max-width:360px){
-     h1, h3, #flash_alert, #flash_notice{
-          font-size:1.4em;
-     }
-     nav, form#new_user, #new-session, form#new_comment, #password-reset, #password-edit{
-          font-size:1.0em;
      }
 }
