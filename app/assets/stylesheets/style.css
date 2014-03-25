@@ -31,7 +31,8 @@ body, header, img, h2, #about
 #flexible-container iframe, 
 #flexible-container object,  
 #flexible-container embed, 
-li li, li li li, h3{
+li li, li li li, h3, 
+button#about-button-narrow-screen{
      width:100%;
 }
 
@@ -60,7 +61,7 @@ h1, #about-button span, #about-button-narrow-screen span, li, li a:nth-of-type(2
      color:#46FF00;  
 }
 
-header p, #flash_notice,#main-content button, li li, h3, #new-session a, 
+header p, #flash_notice,#main-content h2, #main-content button, li li, h3, #new-session a, 
 #show_facility_comments a, h4{
      color:#FFF51A;
 }
@@ -91,7 +92,8 @@ button#about-button-narrow-screen{
 h1, nav, #map, #main-content, #main-content button, .comment_text, .display_comment img{
      float:left;
 }
-h1, nav,#map, #flash_alert{
+
+h1, nav, #map, #flash_alert{
      width: 50%;
 }
 
@@ -112,7 +114,7 @@ nav, header p{
 }
 
 nav{
-     margin:0 0 1em 0; 
+     margin-bottom:1em; 
 }
 
 nav a, #main-content button, li{
@@ -186,8 +188,9 @@ img,
      height:31em;
 }
 
-#main-content, #about, #flash_alert, form#new_user, #password-edit, #new-session, 
-#password-reset, form#new_comment, #show_facility_comments{
+#main-content, #about, #flash_alert, form#new_user, 
+#password-edit, #new-session, #password-reset, 
+form#new_comment, #show_facility_comments{
      /*include browser-specific prefixes for CSS3 element*/
      background-color: -webkit-rgba(0,0,0,0.7);
      background-color: -ie-rgba(0,0,0,0.7);
@@ -206,45 +209,44 @@ img,
      background-color:#000;
 }
 
-#main-content button, button#about-button, button#about-button-narrow-screen, li, 
-form#new_user input, #new-session input, form#new_comment select, 
-form#new_comment textarea #password-reset input, #password-edit input{
+#main-content button, button#about-button, li, form#new_user input, 
+#new-session input, form#new_comment select, form#new_comment textarea, 
+#password-reset input, #password-edit input{
       width:90%;
 }
 
-#main-content button, button#about-button, button#about-button-narrow-screen,
-.display_comment{
+#main-content, #main-content button, #about, button#about-button, 
+button#about-button-narrow-screen, .display_comment, form#new_user, 
+#password-edit, #new-session, #password-reset, form#new_comment, 
+#show_facility_comments{
       /*include browser-specific prefixes for CSS3 element*/
      -webkit-border-radius: 0.5em 0.5em; 
      -ie-border-radius: 0.5em 0.5em; 
      border-radius:0.5em 0.5em;
 }
 
+#main-content, #main-content button, form#new_user, 
+#password-edit, #new-session, #password-reset, 
+form#new_comment, #show_facility_comments{
+     border:1px solid #FFF51A;
+} 
+
 #main-content button{
      height:3em;
      margin:0 5% 1em 5%;
-     border:1px solid #FFF51A;
 }
 
 #main-content button:hover{
      background-color:#FFF51A;
 }
 
-#about, ul{
-     padding-left: 5%;
-}
-
-#about, .display_comment p:nth-of-type(2){
-     padding-right: 5%;
-}
-
-button#about-button, button#about-button-narrow-screen{
+#about, button#about-button, button#about-button-narrow-screen{
      border:1px solid #46FF00;
      padding:5%;   
 }
 
 button#about-button{
-     margin:2.3em 5% 1em 5%;
+     margin:1em 5%;
 }
 
 button#about-button-narrow-screen, li{
@@ -252,12 +254,11 @@ button#about-button-narrow-screen, li{
 }
 
 button#about-button-narrow-screen{
-     margin:1.5em 5%;
+     margin:1.5em 0;
      /*include browser-specific prefixes for CSS3 element*/
      background-color: -webkit-rgba(0,0,0,0.8);
      background-color: -ie-rgba(0,0,0,0.8);
      background-color: rgba(0,0,0,0.8);
-     background-color:#000;
 }
 /**********************************************************************************/
 /*Styling for the nested lists in the primary view -view/facilities/index.html.erb*/
@@ -265,6 +266,7 @@ button#about-button-narrow-screen{
 ul{
      list-style-type:none;    
      line-height: 2.5em;
+     padding-left:5%;
 }
 
 li, .pagination, h4{
@@ -337,6 +339,7 @@ form#new_comment {
 
 .display_comment p:nth-of-type(2){
      padding-left: 6%;
+     padding-right:5%;
 }
 /******************************************************************************/
 /*Media Queries*/
@@ -347,48 +350,54 @@ form#new_comment {
      }
 }
 
-@media only screen and (max-width: 1200px){
-    h1, h3, #flash_alert, #flash_notice{
-          font-size:2em;
-    }
-    nav{
-          font-size:1.8em;
-    }
-    form#new_user, form#new_comment{
-          width:60%;
-          margin-left:20%;
-    }
-    #new-session, #password-reset, #password-edit{
-          width:50%;
-          margin-left:25%;
-    }
-}
-
-@media only screen and (max-width:768px){
-     h1, h3{
-          width:100%;
-          font-size:2.4em; 
-          text-align:center;
+@media only screen and (max-width:1024px){
+     #map{
+          display:none;
+     }
+     button#about-button-narrow-screen{
+          display:inline;
+     }
+     
+     h1{
+          width:40%;
      }
      nav{
-          width:100%;
-          float:left;
-          font-size:2em;
-          text-align:center;
+          width:60%;
      }
-     nav a{
-          line-height:2em;
+
+     h1, nav{
+          font-size: 2.0em;
      }
-     #map h2{
-          font-size:1.8em;
+     h1{ 
+     padding-left:0;
      }
-     #main-content, form#new_user, #new-session, form#new_comment, 
-     #show_facility_comments, #password-reset, #password-edit, #map {
+     nav, header p{
+     padding-right:0; 
+     }
+     #main-content, form#new_user, #new-session, 
+     form#new_comment, #show_facility_comments, #password-reset, 
+     #password-edit {
           width:100%;
      }
      #main-content, form#new_user, #new-session, form#new_comment, 
      #show_facility_comments, #password-reset, #password-edit{
           margin:0;
+     }
+}
+
+@media only screen and (max-width:768px){
+     h1, h3, nav, #flash_alert, header p{
+          width:100%;
+          text-align:center;
+     }
+     #flash_alert{
+          margin-left: 0;
+     }
+     h1, h3{
+          font-size:2.4em; 
+     }
+     nav a{
+          line-height:2em;
      }
      #main-content button{
           height:5em;
@@ -399,19 +408,14 @@ form#new_comment {
 }
 
 @media only screen and (max-width:480px){
-     #map{
-          display:none;
-     }
-     button#about-button-narrow-screen{
-          display:inline;
-     }
      h1, h3, nav, #flash_alert, #flash_notice{
           text-align:left;
      }
      h1, h3{
           font-size:1.4em;
      }
-     nav, #flash_alert, #flash_notice, form#new_user, #new-session, form#new_comment, #password-reset, #password-edit{
+     nav, #flash_alert, #flash_notice, form#new_user, #new-session, form#new_comment, 
+     #password-reset, #password-edit{
           font-size:1.0em;
      }
      nav a{
