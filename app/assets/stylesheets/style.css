@@ -215,14 +215,14 @@ form#new_comment, #show_facility_comments{
 form#new_user label, #new-session input, #new-session label, #new-session a, 
 form#new_comment select, form#new_comment textarea, form#new_comment label,
 form#new_comment input, #password-reset input, #password-reset label, 
-#password-edit input, #password-reset label{
+#password-edit input, #password-edit label{
       width:90%;
 }
 
 form#new_user input, form#new_user label, #new-session input, #new-session label, 
 #new-session a, form#new_comment select, form#new_comment textarea, form#new_comment label,
 form#new_comment input, #password-reset input, #password-reset label, 
-#password-edit input, #password-reset label{
+#password-edit input, #password-edit label{
      margin-left:5%;
 }
 
