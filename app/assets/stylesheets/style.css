@@ -51,7 +51,7 @@ body{
      margin:auto;
 }
 
-header, nav a:hover, #flash_alert, #main-content, button#about-button, 
+header, header p, nav a:hover, #flash_alert, #main-content, button#about-button, 
 button#about-button-narrow-screen, form#new_user, #password-edit, 
 #new-session, #password-reset, form#new_comment, #show_facility_comments{
      color:#FFF;
@@ -61,7 +61,7 @@ h1, #about-button span, #about-button-narrow-screen span, li, li a:nth-of-type(2
      color:#46FF00;  
 }
 
-header p, #flash_notice,#main-content h2, #main-content button, li li, h3, #new-session a, 
+header p:nth-of-type(1), #flash_notice, #main-content h2, #main-content button, li li, h3, #new-session a, 
 #show_facility_comments a, h4{
      color:#FFF51A;
 }
@@ -77,7 +77,7 @@ nav a, li a, li li li{
 /*Header*/
 
 header{
-     margin:0.5em 0 1em 0;
+     margin:0.5em 0 2em 0;
 }
 
 h1, nav, #flash_alert, #flash_notice, h3{
@@ -101,7 +101,7 @@ h1, map h2, h3{
      margin:0;
 }
 
-h1, h3{ 
+h1{ 
      padding-left:2.5%;
 }
 
@@ -130,7 +130,8 @@ nav a, h3{
 }
 
 header p{
-     line-height:1;
+     line-height: 1;
+     margin:0.1em 0;
 }
 
 h2, #flash_alert,#flash_notice, h3{
@@ -211,12 +212,21 @@ form#new_comment, #show_facility_comments{
 }
 
 #main-content button, button#about-button, li, form#new_user input, 
-#new-session input, form#new_comment select, form#new_comment textarea, 
-#password-reset input, #password-edit input{
+form#new_user label, #new-session input, #new-session label, #new-session a, 
+form#new_comment select, form#new_comment textarea, form#new_comment label,
+form#new_comment input, #password-reset input, #password-reset label, 
+#password-edit input, #password-reset label{
       width:90%;
 }
 
-#main-content, #main-content button, #about, button#about-button, 
+form#new_user input, form#new_user label, #new-session input, #new-session label, 
+#new-session a, form#new_comment select, form#new_comment textarea, form#new_comment label,
+form#new_comment input, #password-reset input, #password-reset label, 
+#password-edit input, #password-reset label{
+     margin-left:5%;
+}
+
+#main-content, #main-content button, #about, #flash_alert, button#about-button, 
 button#about-button-narrow-screen, .display_comment, form#new_user, 
 #password-edit, #new-session, #password-reset, form#new_comment, 
 #show_facility_comments{
@@ -231,6 +241,10 @@ button#about-button-narrow-screen, .display_comment, form#new_user,
 form#new_comment, #show_facility_comments{
      border:1px solid #FFF51A;
 } 
+
+#flash_alert{
+     border:1px solid #FFF;
+}
 
 #main-content button{
      height:3em;
@@ -289,20 +303,23 @@ li li li:hover {
 /******************************************************************************/
 /*Styling for all other views and forms*/
 /******************************************************************************/
-form#new_user, #password-edit, form#new_comment, #show_facility_comments{
-     padding-left: 2%;
+form#new_user, #new-session, form#new_comment, 
+#show_facility_comments, #password-edit, #password-reset{
+     margin-top: 1em;
+}
+
+form#new_user, #new-session, form#new_comment, #password-reset, #password-edit{
+     padding:1em;
 }
 
 form#new_user, #password-edit {
      width:30%;
-     margin-left:36%; 
+     margin-left:35%; 
 }
 
 #new-session, #password-reset {
      width:25%;
-     margin-left:38%; 
-     margin-top:4em;
-     padding-left:3.5%;
+     margin-left:37.5%; 
 }
 
 form#new_comment {
