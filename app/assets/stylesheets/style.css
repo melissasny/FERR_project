@@ -164,6 +164,7 @@ form#new_comment, #show_facility_comments{
      top:0;
      left:0;  
      padding:0;
+     margin-bottom: 0;
 }
 
 #map{
@@ -202,7 +203,7 @@ form#new_comment, #show_facility_comments{
 }
 
 #main-content{
-     margin:0 5% 0 2.5%;
+     margin:0.85em 5% 0 2.5%;
 }
 
 #main-content button, button#about-button{
