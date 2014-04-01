@@ -194,8 +194,8 @@ img,
      height:31em;
 }
 
-#main-content, #about, #flash_alert, form#new_user, 
-#password-edit, #new-session, #password-reset, 
+#main-content, #about, #flash_alert, #flash_notice,
+form#new_user, #password-edit, #new-session, #password-reset, 
 form#new_comment, #show_facility_comments{
      /*include browser-specific prefixes for CSS3 element*/
      background-color: -webkit-rgba(0,0,0,0.7);
@@ -230,8 +230,8 @@ form#new_comment input, #password-reset input, #password-reset label,
      margin-left:5%;
 }
 
-#main-content, #main-content button, #about, #flash_alert, button#about-button, 
-button#about-button-narrow-screen, .display_comment, form#new_user, 
+#main-content, #main-content button, #about, #flash_alert, #flash_notice,
+button#about-button, button#about-button-narrow-screen, .display_comment, form#new_user, 
 #password-edit, #new-session, #password-reset, form#new_comment, 
 #show_facility_comments{
       /*include browser-specific prefixes for CSS3 element*/
@@ -242,7 +242,7 @@ button#about-button-narrow-screen, .display_comment, form#new_user,
 
 #main-content, #main-content button, form#new_user, 
 #password-edit, #new-session, #password-reset, 
-form#new_comment, #show_facility_comments{
+form#new_comment, #show_facility_comments, #flash_notice{
      border:1px solid #FFF51A;
 }
 
@@ -419,12 +419,13 @@ form#new_comment {
      #show_facility_comments, #password-reset, #password-edit{
           margin:0;
      }
+      #flash_alert{
+          margin-left: 0;
+     }
 }
 
 @media only screen and (max-width:768px){
-     #flash_alert{
-          margin-left: 0;
-     }
+    
      h1 {
           font-size:2.4em; 
      }

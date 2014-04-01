@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
   	if @user.save
-      redirect_to log_in_path, :notice => "You are signed up! Please log in."
+      redirect_to log_in_path, :notice => "You are signed up! Please log in"
   	else
   		render "new"
   	end
