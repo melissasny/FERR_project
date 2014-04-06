@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   private
   def ensure_user_is_logged_in
     unless current_user
-      redirect_to sign_up_path, alert: "Please sign-up and log-in to comment"
+      redirect_to sign_up_path, notice: "Please sign-up and log-in to comment"
     end  
   end
 end
