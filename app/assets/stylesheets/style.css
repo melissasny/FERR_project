@@ -31,7 +31,7 @@ body, header, img, h2, #about
 #flexible-container iframe, 
 #flexible-container object,  
 #flexible-container embed, 
-li li, li li li, h3{
+li li, li li li{
      width:100%;
 }
 
@@ -196,14 +196,14 @@ img,
 
 #main-content, #about, #flash_alert, #flash_notice,
 form#new_user, #password-edit, #new-session, #password-reset, 
-form#new_comment, #show_facility_comments{
+form#new_comment, #show_facility_comments, h3{
      /*include browser-specific prefixes for CSS3 element*/
      background-color: -webkit-rgba(0,0,0,0.7);
      background-color: -ie-rgba(0,0,0,0.7);
      background-color: rgba(0,0,0,0.7);
 }
 
-#main-content, form#new_comment{
+#main-content, form#new_comment, #new_comment h3{
      width:40%;
 }
 
@@ -233,7 +233,7 @@ form#new_comment input, #password-reset input, #password-reset label,
 #main-content, #main-content button, #about, #flash_alert, #flash_notice,
 button#about-button, button#about-button-narrow-screen, .display_comment, form#new_user, 
 #password-edit, #new-session, #password-reset, form#new_comment, 
-#show_facility_comments{
+#show_facility_comments, h3{
       /*include browser-specific prefixes for CSS3 element*/
      -webkit-border-radius: 0.5em 0.5em; 
      -ie-border-radius: 0.5em 0.5em; 
@@ -320,17 +320,17 @@ form#new_user, #new-session, form#new_comment, #password-reset, #password-edit{
      padding:1em;
 }
 
-form#new_user, #password-edit {
+form#new_user, #password-edit, #new_user h3{
      width:30%;
      margin-left:35%; 
 }
 
-#new-session, #password-reset {
+#new-session, #password-reset, h3#login{
      width:25%;
      margin-left:37.5%; 
 }
 
-form#new_comment {
+form#new_comment, #new_comment h3{
      margin-left:30%; 
 }
 
@@ -421,16 +421,17 @@ form#new_comment {
      h1, nav, header p{
           text-align:center;
      }
-     h3, #flash_alert, #flash_notice, form#new_user, #new-session, 
+     #flash_alert, #flash_notice, form#new_user, #new-session, 
      form#new_comment, #show_facility_comments, #password-reset, 
-     #password-edit{
+     #password-edit, #new_user h3, h3#login, #new_comment h3{
           width:70%;
      }
      form#new_user, #new-session, form#new_comment, 
      #show_facility_comments, #password-reset, #password-edit{
           margin:0 0 0 15%;
      }
-     h3, #flash_alert, #flash_notice{
+     #flash_alert, #flash_notice, #new_user h3, h3#login, 
+     #new_comment h3{
           margin-left: 15%;
      }
      .comment_text{
