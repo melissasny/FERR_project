@@ -468,9 +468,6 @@ form#new_comment, #new_comment h3{
 }
 
 @media only screen and (max-width:480px){
-     h1, h3, nav{
-          text-align:left;
-     }
      h1, nav, h3, #flash_alert, #flash_notice, #main-content h2, 
      #main-content button, button#about-button-narrow-screen{
           font-size:1.4em;
