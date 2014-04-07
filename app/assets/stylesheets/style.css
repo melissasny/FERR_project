@@ -77,7 +77,7 @@ nav a, li a, li li li, #show_facility_comments h4, #show_facility_comments h4 a{
 /*Header*/
 
 header{
-     margin:0.5em 0 1em 0;
+     margin:0.5em 0 1.5em 0;
 }
 
 h1, nav, #flash_alert, #flash_notice{
@@ -143,7 +143,7 @@ h2, #flash_alert,#flash_notice, h3{
 }
 
 #flash_alert, #flash_notice{
-     margin-top:2em;
+     margin-top:0.5em;
      margin-left: 25%;
 }
 
